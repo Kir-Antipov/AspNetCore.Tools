@@ -1,0 +1,25 @@
+﻿<#@ template language="C#" #>
+<#@ output extension=".cs" #>
+<#@ Assembly Name="System.Core" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.Linq" #><#+
+    const int maxInputs = 8;
+
+    private static string GetGeneric(int parameters) => string.Join(", ", Enumerable.Range(1, parameters).Select(n => $"T{n}").Prepend("TViewModel"));
+
+    private static string GetParameterString(int parameters, Func<int, string> selector)
+    {
+        string result = string.Join(", ", Enumerable.Range(1, parameters).Select(selector));
+        if (!string.IsNullOrEmpty(result))
+            result = $", {result}";
+        return result;
+    }
+
+    private static string GetArgs(int parameters) => GetParameterString(parameters, n => $"arg{n}");
+
+    private static string GetSignature(int parameters) => GetParameterString(parameters, n => $"T{n} arg{n}");
+
+    private static string GetInheritDocSignature(int parameters) => GetParameterString(parameters, n => $"T{n}");
+
+    private static string GetPaddingIfNotLast(int i, int lines = 1) => i == maxInputs ? string.Empty : string.Concat(Enumerable.Repeat("\r\n", lines));
+#>
