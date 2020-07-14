@@ -1,0 +1,52 @@
+﻿<#@ include file="../Templates/ViewModelHelpers.tt" #>
+<#@ include file="../Templates/NumberHelpers.tt" #>
+using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics.CodeAnalysis;
+using System.Threading.Tasks;
+
+namespace AspNetCore.Tools.ViewModels
+{
+    /// <summary>
+    /// Basic interface for view model factory.
+    /// </summary>
+    public interface IViewModelFactory
+    {
+<#
+    for (int i = 0; i < maxInputs; ++i)
+    {
+#>
+        /// <inheritdoc cref="TryGetViewModel{<#= GetGeneric(maxInputs) #>}(ControllerBase<#= GetInheritDocSignature(maxInputs) #>, out TViewModel)"/>
+        bool TryGetViewModel<<#= GetGeneric(i) #>>(ControllerBase controller<#= GetSignature(i) #>, [MaybeNull, NotNullWhen(true)] out TViewModel model);
+
+        /// <inheritdoc cref="TryGetViewModelAsync{<#= GetGeneric(maxInputs) #>}(ControllerBase<#= GetInheritDocSignature(maxInputs) #>)"/>
+        Task<(bool success, TViewModel model)> TryGetViewModelAsync<<#= GetGeneric(i) #>>(ControllerBase controller<#= GetSignature(i) #>);
+<#
+        WriteLine("");
+        WriteLine("");
+    }
+#>
+        /// <summary>
+        /// Attempts to obtain <typeparamref name="TViewModel"/> from the presented data.
+        /// </summary>
+        /// <typeparam name="TViewModel">ViewModel type.</typeparam>
+        /// <param name="model">
+        /// When this method returns, contains the <typeparamref name="TViewModel"/> ViewModel, if the processing succeeded.
+        /// </param>
+        /// <param name="controller">The controller with which the processing of the presented data is associated.</param>
+        /// <returns><see langword="true"/> if the processing succeeded; otherwise, <see langword="false"/>.</returns>
+<#
+    for (int i = 1; i <= maxInputs; ++i)
+    {
+#>
+        /// <typeparam name="T<#=i#>">The <#= GetOrdinal(i) #> parameter's type.</typeparam>
+        /// <param name="arg<#=i#>">The <#= GetOrdinal(i) #> parameter to be passed to ViewModelBuilder.</param>
+<#
+    }
+#>
+        bool TryGetViewModel<<#= GetGeneric(maxInputs) #>>(ControllerBase controller<#= GetSignature(maxInputs) #>, [MaybeNull, NotNullWhen(true)] out TViewModel model);
+
+        /// <returns>A <see cref="Task"/> that represents the completion of request processing.</returns>
+        /// <inheritdoc cref="TryGetViewModel{<#= GetGeneric(maxInputs) #>}(ControllerBase<#= GetInheritDocSignature(maxInputs) #>, out TViewModel)"/>
+        Task<(bool success, TViewModel model)> TryGetViewModelAsync<<#= GetGeneric(maxInputs) #>>(ControllerBase controller<#= GetSignature(maxInputs) #>);
+    }
+}
