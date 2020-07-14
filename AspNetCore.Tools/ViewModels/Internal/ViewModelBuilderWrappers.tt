@@ -1,0 +1,33 @@
+﻿<#@ include file="../../Templates/ViewModelHelpers.tt" #>
+using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics.CodeAnalysis;
+using System.Threading.Tasks;
+
+namespace AspNetCore.Tools.ViewModels.Internal
+{
+<#
+    for (int i = 0; i <= maxInputs; ++i)
+    {
+#>
+    internal abstract class ViewModelBuilderWrapper<<#= GetGeneric(i) #>> : ViewModelBuilderWrapper
+    {
+        public static ViewModelBuilderWrapper<<#= GetGeneric(i) #>> Instance = Create<ViewModelBuilderWrapper<<#= GetGeneric(i) #>>>();
+
+        public virtual bool TryGetViewModel(ControllerBase controller<#= GetSignature(i) #>, [MaybeNull, NotNullWhen(true)] out TViewModel model)
+        {
+            var (success, result) = TryGetViewModelAsync(controller<#= GetArgs(i) #>).Result;
+            model = result!;
+            return success;
+        }
+
+        public virtual Task<(bool success, TViewModel model)> TryGetViewModelAsync(ControllerBase controller<#= GetSignature(i) #>)
+        {
+            bool success = TryGetViewModel(controller<#= GetArgs(i) #>, out TViewModel model);
+            return Task.FromResult((success, model));
+        }
+    }
+<#
+        Write(GetPaddingIfNotLast(i));
+    }
+#>
+}
