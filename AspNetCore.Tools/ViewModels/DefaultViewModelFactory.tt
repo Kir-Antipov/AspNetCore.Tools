@@ -1,0 +1,28 @@
+﻿<#@ include file="../Templates/ViewModelHelpers.tt" #>
+using AspNetCore.Tools.ViewModels.Internal;
+using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics.CodeAnalysis;
+using System.Threading.Tasks;
+
+namespace AspNetCore.Tools.ViewModels
+{
+    /// <summary>
+    /// Default implementation of the <see cref="IViewModelFactory"/>.
+    /// </summary>
+    public class DefaultViewModelFactory : IViewModelFactory
+    {
+<#
+    for (int i = 0; i <= maxInputs; ++i)
+    {
+#>
+        /// <inheritdoc cref="IViewModelFactory.TryGetViewModel{<#= GetGeneric(maxInputs) #>}(ControllerBase<#= GetInheritDocSignature(maxInputs) #>, out TViewModel)"/>
+        public virtual bool TryGetViewModel<<#= GetGeneric(i) #>>(ControllerBase controller<#= GetSignature(i) #>, [MaybeNull, NotNullWhen(true)] out TViewModel model) => ViewModelBuilderWrapper<<#= GetGeneric(i) #>>.Instance.TryGetViewModel(controller<#= GetArgs(i) #>, out model);
+
+        /// <inheritdoc cref="IViewModelFactory.TryGetViewModelAsync{<#= GetGeneric(maxInputs) #>}(ControllerBase<#= GetInheritDocSignature(maxInputs) #>)"/>
+        public virtual Task<(bool success, TViewModel model)> TryGetViewModelAsync<<#= GetGeneric(i) #>>(ControllerBase controller<#= GetSignature(i) #>) => ViewModelBuilderWrapper<<#= GetGeneric(i) #>>.Instance.TryGetViewModelAsync(controller<#= GetArgs(i) #>);
+<#
+        Write(GetPaddingIfNotLast(i, 2));
+    }
+#>
+    }
+}
