@@ -1,0 +1,76 @@
+﻿<#@ template language="C#" #>
+<#@ output extension=".cs" #>
+<#@ Assembly Name="System.Core" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.Linq" #>
+<#@ include file="../Templates/NumberHelpers.tt" #>
+using AspNetCore.Tools.Middlewares;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Http;
+using System;
+using System.Threading.Tasks;
+
+namespace AspNetCore.Tools.Extensions
+{
+    /// <summary>
+    /// Extension methods for adding middlewares to the application's request pipeline.
+    /// </summary>
+    public static partial class ApplicationBuilderExtensions
+    {
+        /// <inheritdoc cref="UseMiddleware{<#= GetGeneric(maxInputs) #>}(IApplicationBuilder, Func{RequestDelegate, HttpContext<#= GetArgs(maxInputs) #>, Task})"/>
+        public static IApplicationBuilder UseMiddleware(this IApplicationBuilder app, Action action) => app.UseMiddleware(InlineMiddleware.Create(action));
+        
+        /// <inheritdoc cref="UseMiddleware{<#= GetGeneric(maxInputs) #>}(IApplicationBuilder, Func{RequestDelegate, HttpContext<#= GetArgs(maxInputs) #>, Task})"/>
+        public static IApplicationBuilder UseMiddleware(this IApplicationBuilder app, Func<Task> action) => app.UseMiddleware(InlineMiddleware.Create(action));
+        
+        /// <inheritdoc cref="UseMiddleware{<#= GetGeneric(maxInputs) #>}(IApplicationBuilder, Func{RequestDelegate, HttpContext<#= GetArgs(maxInputs) #>, Task})"/>
+        public static IApplicationBuilder UseMiddleware(this IApplicationBuilder app, Action<HttpContext> action) => app.UseMiddleware(InlineMiddleware.Create(action));
+        
+        /// <inheritdoc cref="UseMiddleware{<#= GetGeneric(maxInputs) #>}(IApplicationBuilder, Func{RequestDelegate, HttpContext<#= GetArgs(maxInputs) #>, Task})"/>
+        public static IApplicationBuilder UseMiddleware(this IApplicationBuilder app, Func<HttpContext, Task> action) => app.UseMiddleware(InlineMiddleware.Create(action));
+        
+        /// <inheritdoc cref="UseMiddleware{<#= GetGeneric(maxInputs) #>}(IApplicationBuilder, Func{RequestDelegate, HttpContext<#= GetArgs(maxInputs) #>, Task})"/>
+        public static IApplicationBuilder UseMiddleware(this IApplicationBuilder app, Func<RequestDelegate, HttpContext, Task> action) => app.UseMiddleware(InlineMiddleware.Create(action));
+
+<#
+    for (int i = 1; i < maxInputs; ++i)
+    {
+#>
+        /// <inheritdoc cref="UseMiddleware{<#= GetGeneric(maxInputs) #>}(IApplicationBuilder, Func{RequestDelegate, HttpContext<#= GetArgs(maxInputs) #>, Task})"/>
+        public static IApplicationBuilder UseMiddleware<<#= GetGeneric(i) #>>(this IApplicationBuilder app, Func<RequestDelegate, HttpContext<#= GetArgs(i) #>, Task> action) => app.UseMiddleware(InlineMiddleware.Create(action));
+<#
+        WriteLine("");
+    }
+#>
+        /// <summary>
+        /// Adds a middleware to the application's request pipeline.
+        /// </summary>
+        /// <param name="app">The <see cref="IApplicationBuilder"/> instance.</param>
+        /// <param name="action">The middleware action.</param>
+        /// <returns>The <see cref="IApplicationBuilder"/> instance.</returns>
+<#
+    for (int i = 1; i <= maxInputs; ++i)
+    {
+#>
+        /// <typeparam name="T<#=i#>">The <#= GetOrdinal(i) #> parameter of the method to be provided by DI.</typeparam>
+<#
+    }
+#>
+        public static IApplicationBuilder UseMiddleware<<#= GetGeneric(maxInputs) #>>(this IApplicationBuilder app, Func<RequestDelegate, HttpContext<#= GetArgs(maxInputs) #>, Task> action) => app.UseMiddleware(InlineMiddleware.Create(action));
+    }
+}
+<#+
+    const int maxInputs = 14;
+
+    private static string GetGeneric(int parameters) => string.Join(", ", Enumerable.Range(1, parameters).Select(n => $"T{n}"));
+
+    private static string GetParameterString(int parameters, Func<int, string> selector)
+    {
+        string result = string.Join(", ", Enumerable.Range(1, parameters).Select(selector));
+        if (!string.IsNullOrEmpty(result))
+            result = $", {result}";
+        return result;
+    }
+
+    private static string GetArgs(int parameters) => GetParameterString(parameters, n => $"T{n}");
+#>
