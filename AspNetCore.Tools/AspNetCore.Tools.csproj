@@ -1,9 +1,73 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFrameworks>netcoreapp3.1</TargetFrameworks>
     <Nullable>enable</Nullable>
     <OutputType>Library</OutputType>
   </PropertyGroup>
+
+  <ItemGroup>
+    <AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+      <_Parameter1>&lt;dynamic&gt;$(AssemblyName).ViewModels</_Parameter1>
+    </AssemblyAttribute>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{508349b6-6b84-4df5-91f0-309beebad82d}" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Extensions\ApplicationBuilderUseMiddlewareExtensions.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ApplicationBuilderUseMiddlewareExtensions.tt</DependentUpon>
+    </Compile>
+    <Compile Update="Extensions\ViewModelFactoryExtensions.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ViewModelFactoryExtensions.tt</DependentUpon>
+    </Compile>
+    <Compile Update="ViewModels\DefaultViewModelFactory.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>DefaultViewModelFactory.tt</DependentUpon>
+    </Compile>
+    <Compile Update="ViewModels\Internal\ViewModelBuilderWrappers.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>ViewModelBuilderWrappers.tt</DependentUpon>
+    </Compile>
+    <Compile Update="ViewModels\IViewModelFactory.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>IViewModelFactory.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="Extensions\ApplicationBuilderUseMiddlewareExtensions.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ApplicationBuilderUseMiddlewareExtensions.cs</LastGenOutput>
+    </None>
+    <None Update="Extensions\ViewModelFactoryExtensions.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ViewModelFactoryExtensions.cs</LastGenOutput>
+    </None>
+    <None Update="Templates\NumberHelpers.tt">
+      <Generator></Generator>
+    </None>
+    <None Update="ViewModels\DefaultViewModelFactory.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>DefaultViewModelFactory.cs</LastGenOutput>
+    </None>
+    <None Update="ViewModels\Internal\ViewModelBuilderWrappers.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>ViewModelBuilderWrappers.cs</LastGenOutput>
+    </None>
+    <None Update="ViewModels\IViewModelFactory.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>IViewModelFactory.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
 
 </Project>
