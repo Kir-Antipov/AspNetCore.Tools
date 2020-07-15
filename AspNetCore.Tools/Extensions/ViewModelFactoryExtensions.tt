@@ -1,0 +1,106 @@
+﻿<#@ include file="../Templates/ViewModelHelpers.tt" #>
+<#@ include file="../Templates/NumberHelpers.tt" #>
+using AspNetCore.Tools.ViewModels;
+using Microsoft.AspNetCore.Mvc;
+using System;
+using System.Threading.Tasks;
+
+namespace AspNetCore.Tools.Extensions
+{
+    /// <summary>
+    /// Provides a set of static (Shared in Visual Basic) helpful methods for objects
+    /// that implement <see cref="IViewModelFactory"/>.
+    /// </summary>
+    public static class ViewModelFactoryExtensions
+    {
+        private static Exception GetExceptionFor<TViewModel>() => new InvalidOperationException($"An attempt to create {typeof(TViewModel).FullName} was unsuccessful.");
+
+<#
+    for (int i = 0; i < maxInputs; ++i)
+    {
+#>
+        /// <inheritdoc cref="GetViewModel{<#= GetGeneric(maxInputs) #>}(IViewModelFactory, ControllerBase<#= GetInheritDocSignature(maxInputs) #>)"/>
+        public static TViewModel GetViewModel<<#= GetGeneric(i) #>>(this IViewModelFactory factory, ControllerBase controller<#= GetSignature(i) #>) =>
+            factory.TryGetViewModel(controller<#= GetArgs(i) #>, out TViewModel model) ? model : throw GetExceptionFor<TViewModel>();
+
+        /// <inheritdoc cref="GetActionResult{<#= GetGeneric(maxInputs) #>}(IViewModelFactory, ControllerBase<#= GetInheritDocSignature(maxInputs) #>, Func{TViewModel, IActionResult})"/>
+        public static IActionResult GetActionResult<<#= GetGeneric(i) #>>(this IViewModelFactory factory, ControllerBase controller<#= GetSignature(i) #>, Func<TViewModel, IActionResult> onSuccess) =>
+            factory.GetActionResult(controller<#= GetArgs(i) #>, onSuccess, () => throw GetExceptionFor<TViewModel>());
+        
+        /// <inheritdoc cref="GetActionResult{<#= GetGeneric(maxInputs) #>}(IViewModelFactory, ControllerBase<#= GetInheritDocSignature(maxInputs) #>, Func{TViewModel, IActionResult}, Func{IActionResult})"/>
+        public static IActionResult GetActionResult<<#= GetGeneric(i) #>>(this IViewModelFactory factory, ControllerBase controller<#= GetSignature(i) #>, Func<TViewModel, IActionResult> onSuccess, Func<IActionResult> onFailure) =>
+            factory.TryGetViewModel(controller<#= GetArgs(i) #>, out TViewModel model) ? onSuccess(model) : onFailure();
+                
+        /// <inheritdoc cref="GetViewModelAsync{<#= GetGeneric(maxInputs) #>}(IViewModelFactory, ControllerBase<#= GetInheritDocSignature(maxInputs) #>)"/>
+        public static async Task<TViewModel> GetViewModelAsync<<#= GetGeneric(i) #>>(this IViewModelFactory factory, ControllerBase controller<#= GetSignature(i) #>) =>
+            await factory.TryGetViewModelAsync<<#= GetGeneric(i) #>>(controller<#= GetArgs(i) #>) is (true, TViewModel model) ? model : throw GetExceptionFor<TViewModel>();
+
+        /// <inheritdoc cref="GetActionResultAsync{<#= GetGeneric(maxInputs) #>}(IViewModelFactory, ControllerBase<#= GetInheritDocSignature(maxInputs) #>, Func{TViewModel, IActionResult})"/>
+        public static Task<IActionResult> GetActionResultAsync<<#= GetGeneric(i) #>>(this IViewModelFactory factory, ControllerBase controller<#= GetSignature(i) #>, Func<TViewModel, IActionResult> onSuccess) =>
+            factory.GetActionResultAsync(controller<#= GetArgs(i) #>, onSuccess, () => throw GetExceptionFor<TViewModel>());
+
+        /// <inheritdoc cref="GetActionResultAsync{<#= GetGeneric(maxInputs) #>}(IViewModelFactory, ControllerBase<#= GetInheritDocSignature(maxInputs) #>, Func{TViewModel, IActionResult}, Func{IActionResult})"/>
+        public static async Task<IActionResult> GetActionResultAsync<<#= GetGeneric(i) #>>(this IViewModelFactory factory, ControllerBase controller<#= GetSignature(i) #>, Func<TViewModel, IActionResult> onSuccess, Func<IActionResult> onFailure) =>
+            await factory.TryGetViewModelAsync<<#= GetGeneric(i) #>>(controller<#= GetArgs(i) #>) is (true, TViewModel model) ? onSuccess(model) : onFailure();
+<#
+        WriteLine("");
+        WriteLine("");
+    }
+#>
+        /// <returns>The <typeparamref name="TViewModel"/> instance.</returns>
+        /// <inheritdoc cref="GetViewModelAsync{<#= GetGeneric(maxInputs) #>}(IViewModelFactory, ControllerBase<#= GetInheritDocSignature(maxInputs) #>)"/>
+        public static TViewModel GetViewModel<<#= GetGeneric(maxInputs) #>>(this IViewModelFactory factory, ControllerBase controller<#= GetSignature(maxInputs) #>) =>
+            factory.TryGetViewModel(controller<#= GetArgs(maxInputs) #>, out TViewModel model) ? model : throw GetExceptionFor<TViewModel>();
+
+        /// <returns>The <see cref="IActionResult"/> provided by the <paramref name="onSuccess"/> callback.</returns>
+        /// <inheritdoc cref="GetActionResultAsync{<#= GetGeneric(maxInputs) #>}(IViewModelFactory, ControllerBase<#= GetInheritDocSignature(maxInputs) #>, Func{TViewModel, IActionResult})"/>
+        public static IActionResult GetActionResult<<#= GetGeneric(maxInputs) #>>(this IViewModelFactory factory, ControllerBase controller<#= GetSignature(maxInputs) #>, Func<TViewModel, IActionResult> onSuccess) =>
+            factory.GetActionResult(controller<#= GetArgs(maxInputs) #>, onSuccess, () => throw GetExceptionFor<TViewModel>());
+        
+        /// <returns>The <see cref="IActionResult"/> provided by one of the callbacks (<paramref name="onSuccess"/> or <paramref name="onFailure"/>).</returns>
+        /// <inheritdoc cref="GetActionResultAsync{<#= GetGeneric(maxInputs) #>}(IViewModelFactory, ControllerBase<#= GetInheritDocSignature(maxInputs) #>, Func{TViewModel, IActionResult}, Func{IActionResult})"/>
+        public static IActionResult GetActionResult<<#= GetGeneric(maxInputs) #>>(this IViewModelFactory factory, ControllerBase controller<#= GetSignature(maxInputs) #>, Func<TViewModel, IActionResult> onSuccess, Func<IActionResult> onFailure) =>
+            factory.TryGetViewModel(controller<#= GetArgs(maxInputs) #>, out TViewModel model) ? onSuccess(model) : onFailure();
+                
+        /// <summary>
+        /// Obtains <typeparamref name="TViewModel"/> from the presented data.
+        /// </summary>
+        /// <exception cref="InvalidOperationException"/>
+        /// <inheritdoc cref="GetActionResultAsync{<#= GetGeneric(maxInputs) #>}(IViewModelFactory, ControllerBase<#= GetInheritDocSignature(maxInputs) #>, Func{TViewModel, IActionResult}, Func{IActionResult})"/>
+        public static async Task<TViewModel> GetViewModelAsync<<#= GetGeneric(maxInputs) #>>(this IViewModelFactory factory, ControllerBase controller<#= GetSignature(maxInputs) #>) =>
+            await factory.TryGetViewModelAsync<<#= GetGeneric(maxInputs) #>>(controller<#= GetArgs(maxInputs) #>) is (true, TViewModel model) ? model : throw GetExceptionFor<TViewModel>();
+
+        /// <summary>
+        /// If <typeparamref name="TViewModel"/> was successfully obtained,
+        /// passes it to the <paramref name="onSuccess"/> callback;
+        /// otherwise it throws the <see cref="InvalidOperationException"/>.
+        /// </summary>
+        /// <exception cref="InvalidOperationException"/>
+        /// <inheritdoc cref="GetActionResultAsync{<#= GetGeneric(maxInputs) #>}(IViewModelFactory, ControllerBase<#= GetInheritDocSignature(maxInputs) #>, Func{TViewModel, IActionResult}, Func{IActionResult})"/>
+        public static Task<IActionResult> GetActionResultAsync<<#= GetGeneric(maxInputs) #>>(this IViewModelFactory factory, ControllerBase controller<#= GetSignature(maxInputs) #>, Func<TViewModel, IActionResult> onSuccess) =>
+            factory.GetActionResultAsync(controller<#= GetArgs(maxInputs) #>, onSuccess, () => throw GetExceptionFor<TViewModel>());
+
+        /// <summary>
+        /// If <typeparamref name="TViewModel"/> was successfully obtained,
+        /// passes it to the <paramref name="onSuccess"/> callback;
+        /// otherwise it calls the <paramref name="onFailure"/> callback.
+        /// </summary>
+        /// <param name="factory">The <see cref="IViewModelFactory"/> instance.</param>
+        /// <param name="controller">The controller with which the processing of the presented data is associated.</param>
+        /// <param name="onSuccess">Callback that will be called if the model was successfully obtained.</param>
+        /// <param name="onFailure">Callback that will be called if the model wasn't obtained.</param>
+        /// <typeparam name="TViewModel">ViewModel type.</typeparam>
+        /// <returns>A <see cref="Task"/> that represents the completion of request processing.</returns>
+<#
+    for (int i = 1; i <= maxInputs; ++i)
+    {
+#>
+        /// <typeparam name="T<#=i#>">The <#= GetOrdinal(i) #> parameter's type.</typeparam>
+        /// <param name="arg<#=i#>">The <#= GetOrdinal(i) #> parameter to be passed to ViewModelBuilder.</param>
+<#
+    }
+#>
+        public static async Task<IActionResult> GetActionResultAsync<<#= GetGeneric(maxInputs) #>>(this IViewModelFactory factory, ControllerBase controller<#= GetSignature(maxInputs) #>, Func<TViewModel, IActionResult> onSuccess, Func<IActionResult> onFailure) =>
+            await factory.TryGetViewModelAsync<<#= GetGeneric(maxInputs) #>>(controller<#= GetArgs(maxInputs) #>) is (true, TViewModel model) ? onSuccess(model) : onFailure();
+    }
+}
