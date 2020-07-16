@@ -6,6 +6,16 @@
     <OutputType>Library</OutputType>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <IsPackable>true</IsPackable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Kir_Antipov</Authors>
+    <Copyright>(c) 2020 Kir_Antipov</Copyright>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageProjectUrl>https://github.com/Kir-Antipov/AspNetCore.Tools</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/Kir-Antipov/AspNetCore.Tools</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>aspnetcore aspnet extensions netcore tools session sessionstate protobuf</PackageTags>
+    <Description>Plugin for AspNetCore.Tools that extends ISession's abilities and allows you to store there complex objects by serializing them with protobuf-net.</Description>
   </PropertyGroup>
 
   <ItemGroup>
@@ -14,6 +24,17 @@
 
   <ItemGroup>
     <ProjectReference Include="..\AspNetCore.Tools\AspNetCore.Tools.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\media\icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
