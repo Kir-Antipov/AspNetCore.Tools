@@ -1,9 +1,21 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFrameworks>netcoreapp3.1</TargetFrameworks>
+    <TargetFrameworks>netcoreapp3.0;netcoreapp3.1</TargetFrameworks>
     <Nullable>enable</Nullable>
     <OutputType>Library</OutputType>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <Authors>Kir_Antipov</Authors>
+    <IsPackable>true</IsPackable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Copyright>(c) 2020 Kir_Antipov</Copyright>
+    <PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+    <PackageIcon>icon.png</PackageIcon>
+    <RepositoryUrl>https://github.com/Kir-Antipov/AspNetCore.Tools</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/Kir-Antipov/AspNetCore.Tools</PackageProjectUrl>
+    <PackageTags>aspnetcore aspnet extensions netcore di tools</PackageTags>
+    <Description>This library provides a bunch of useful methods for working with AspNetCore applications: automatic registration of services, middlewares and model binders, automatic generation of model binder providers, tools for switching from Ugly Fat Controllers to Nice Skinny Controllers, and much much more!</Description>
   </PropertyGroup>
 
   <ItemGroup>
@@ -67,6 +79,14 @@
     <None Update="ViewModels\IViewModelFactory.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>IViewModelFactory.cs</LastGenOutput>
+    </None>
+    <None Include="..\..\LICENSE.md">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+    <None Include="..\..\media\icon.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
     </None>
   </ItemGroup>
 
