@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.Tools", "src\AspNetCore.Tools\AspNetCore.Tools.csproj", "{B32D78AE-9420-4CD2-AF54-5B28E8E03A87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AspNetCore.Tools", "src\AspNetCore.Tools\AspNetCore.Tools.csproj", "{B32D78AE-9420-4CD2-AF54-5B28E8E03A87}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.Tools.Session.ProtobufNet", "src\AspNetCore.Tools.Session.ProtobufNet\AspNetCore.Tools.Session.ProtobufNet.csproj", "{A5F83397-4F08-4071-AF99-EA2F6F69CF48}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{B32D78AE-9420-4CD2-AF54-5B28E8E03A87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B32D78AE-9420-4CD2-AF54-5B28E8E03A87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B32D78AE-9420-4CD2-AF54-5B28E8E03A87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A5F83397-4F08-4071-AF99-EA2F6F69CF48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A5F83397-4F08-4071-AF99-EA2F6F69CF48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A5F83397-4F08-4071-AF99-EA2F6F69CF48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A5F83397-4F08-4071-AF99-EA2F6F69CF48}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
