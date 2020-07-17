@@ -24,7 +24,7 @@ namespace AspNetCore.Tools.ModelBinding
         /// </summary>
         public int Priority { get; set; }
 
-        /// <inheritdoc cref="AutoModelBinderAttribute.AutoModelBinderAttribute(Type[])"/>
+        /// <inheritdoc cref="AutoModelBinderAttribute(Type[])"/>
         public AutoModelBinderAttribute() : this(Type.EmptyTypes) { }
 
         /// <summary>
