@@ -97,6 +97,7 @@ PublishScripts/
 !**/packages/build/
 *.nuget.props
 *.nuget.targets
+nuget.config
 csx/
 *.build.csdef
 ecf/
