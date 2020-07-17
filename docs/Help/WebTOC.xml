@@ -1,0 +1,541 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<HelpTOC>
+
+  <HelpTOCNode Title="Welcome to the AspNetCore.Tools" Url="html/73d9b790-e109-4603-853e-8e25fe9c6438.htm" />
+  <HelpTOCNode Id="61d4356a-a36a-4987-ac78-909d40ee9dfb" Title="AspNetCore.Tools.ActionFilters" Url="html/96f5e962-8f25-8a7a-6fb7-c85f7a8f33b5.htm">
+    <HelpTOCNode Id="ce0cd505-7438-4dd0-90a1-ad98d572c625" Title="ActionFilterBase Class" Url="html/e4dff3ad-3870-32c4-753d-aa55bdaaf762.htm">
+      <HelpTOCNode Title="ActionFilterBase Constructor " Url="html/8f84738f-e4d6-0c92-a7f7-5e76e3863c92.htm" />
+      <HelpTOCNode Title="ActionFilterBase Properties" Url="html/31e00d2c-baf6-f008-5fc7-73182ce3d6a9.htm" />
+      <HelpTOCNode Id="6835fb85-8ae4-4b41-9ae3-c1abc2dccf81" Title="ActionFilterBase Methods" Url="html/71394f90-869d-f2e3-5de9-c9cde388570f.htm">
+        <HelpTOCNode Title="OnActionExecuted Method " Url="html/14cb85de-6fb9-ee3a-a951-43b49563adc8.htm" />
+        <HelpTOCNode Title="OnActionExecuting Method " Url="html/c71956c2-27ed-e739-1ac4-adcefc85df37.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="37e65908-d475-45b0-9484-51323209cdc1" Title="AsyncActionFilterBase Class" Url="html/e768e2b6-3ca0-1026-b6eb-1cb24dc97606.htm">
+      <HelpTOCNode Title="AsyncActionFilterBase Constructor " Url="html/93e29901-0888-0898-075c-4eee5637f3e4.htm" />
+      <HelpTOCNode Title="AsyncActionFilterBase Properties" Url="html/b526670b-a1ce-ca4b-b78e-ee2aaeafb53f.htm" />
+      <HelpTOCNode Id="7bbf4674-78c8-4fa1-a776-2c3f88b7ff3e" Title="AsyncActionFilterBase Methods" Url="html/7b948dbb-a0ea-a5a4-a9e3-a405f783d3f7.htm">
+        <HelpTOCNode Title="OnActionExecutionAsync Method " Url="html/9c93b29d-1457-7981-3666-2e9b6231265e.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="328b6ff0-4d4f-4258-ad83-3bd997e41f0a" Title="AspNetCore.Tools.Extensions" Url="html/f1097e79-efd5-a81a-6a2e-e44860d81bfe.htm">
+    <HelpTOCNode Id="5a1866bc-05d7-4491-bc6a-0cf1ff58cb84" Title="ApplicationBuilderExtensions Class" Url="html/c9484790-70c0-b984-4619-97ff89afb80a.htm">
+      <HelpTOCNode Id="d084cb2d-dc42-487f-b45c-ac3f66ba4a9a" Title="ApplicationBuilderExtensions Methods" Url="html/aec1568b-fb5e-1207-3e40-762caf1fed89.htm">
+        <HelpTOCNode Id="fe1af1a8-7035-4d24-8087-036f76c86c2b" Title="UseCsp Method " Url="html/2d386827-e99d-8dc5-10d2-5f197ecb4d98.htm">
+          <HelpTOCNode Title="UseCsp Method (IApplicationBuilder)" Url="html/cabb3182-221c-2a1a-f760-a11b09220d97.htm" />
+          <HelpTOCNode Title="UseCsp Method (IApplicationBuilder, String)" Url="html/9fa7243f-344c-fbb2-8781-72685a471b40.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="UseMarkedMiddlewares Method " Url="html/739912bf-ef49-de03-bb84-8ef968fc5cd2.htm" />
+        <HelpTOCNode Id="069c4dc3-b183-476e-bef4-ef90a4849005" Title="UseMiddleware Method " Url="html/26e22f95-cb5a-da75-cd90-127f9adde5da.htm">
+          <HelpTOCNode Title="UseMiddleware Method (IApplicationBuilder, Action)" Url="html/34a42261-32b6-bed9-d27d-531d6fa7bebe.htm" />
+          <HelpTOCNode Title="UseMiddleware Method (IApplicationBuilder, Action(HttpContext))" Url="html/1d874b59-2e3c-c21c-0224-69e93abe8d79.htm" />
+          <HelpTOCNode Title="UseMiddleware Method (IApplicationBuilder, Func(Task))" Url="html/d25fa605-12b8-ff5e-4558-293db1f0bcc9.htm" />
+          <HelpTOCNode Title="UseMiddleware(T1, T2, T3, T4, T5, T6, T7) Method (IApplicationBuilder, Func)" Url="html/fe7ce624-dce1-817d-3252-db3ca77eedfd.htm" />
+          <HelpTOCNode Title="UseMiddleware(T1, T2, T3, T4, T5, T6, T7, T8) Method (IApplicationBuilder, Func)" Url="html/65fb4533-f090-482c-18c2-81da84f1629d.htm" />
+          <HelpTOCNode Title="UseMiddleware(T1, T2, T3, T4, T5, T6, T7, T8, T9) Method (IApplicationBuilder, Func)" Url="html/8813346f-c15d-c88e-238c-a95d7e2e41f9.htm" />
+          <HelpTOCNode Title="UseMiddleware(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10) Method (IApplicationBuilder, Func)" Url="html/7bdc1c15-276f-0245-cee4-b1065e5a751c.htm" />
+          <HelpTOCNode Title="UseMiddleware(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11) Method (IApplicationBuilder, Func)" Url="html/ef76198f-6a8c-7cb4-466c-bf7250d68291.htm" />
+          <HelpTOCNode Title="UseMiddleware(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12) Method (IApplicationBuilder, Func)" Url="html/ab4fe763-bc4b-0c60-1e4e-d8bbcc04546a.htm" />
+          <HelpTOCNode Title="UseMiddleware(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13) Method (IApplicationBuilder, Func)" Url="html/f7c88c45-e655-f482-d9f7-ad39082b304b.htm" />
+          <HelpTOCNode Title="UseMiddleware(T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14) Method (IApplicationBuilder, Func)" Url="html/036f2b9e-d2ef-549f-8df2-cecf3a09e5dc.htm" />
+          <HelpTOCNode Title="UseMiddleware Method (IApplicationBuilder, Func(HttpContext, Task))" Url="html/dceb076e-57fe-e884-9886-428a5128d6dd.htm" />
+          <HelpTOCNode Title="UseMiddleware Method (IApplicationBuilder, Func(RequestDelegate, HttpContext, Task))" Url="html/b7fdfab9-7f55-d22e-4e8e-f0014ac75d6e.htm" />
+          <HelpTOCNode Title="UseMiddleware(T1) Method (IApplicationBuilder, Func(RequestDelegate, HttpContext, T1, Task))" Url="html/ec4e3804-14bb-cee8-6c68-c69788e15857.htm" />
+          <HelpTOCNode Title="UseMiddleware(T1, T2) Method (IApplicationBuilder, Func(RequestDelegate, HttpContext, T1, T2, Task))" Url="html/e0ee2273-f084-83c7-82c5-1701cc65ade9.htm" />
+          <HelpTOCNode Title="UseMiddleware(T1, T2, T3) Method (IApplicationBuilder, Func(RequestDelegate, HttpContext, T1, T2, T3, Task))" Url="html/5bff4359-4ce2-c47a-3e39-2b9c5cfb9f74.htm" />
+          <HelpTOCNode Title="UseMiddleware(T1, T2, T3, T4) Method (IApplicationBuilder, Func(RequestDelegate, HttpContext, T1, T2, T3, T4, Task))" Url="html/bba34235-46a5-8db2-f29e-4bc15a06407f.htm" />
+          <HelpTOCNode Title="UseMiddleware(T1, T2, T3, T4, T5) Method (IApplicationBuilder, Func(RequestDelegate, HttpContext, T1, T2, T3, T4, T5, Task))" Url="html/e753c6de-54e2-f707-9dbf-61b8b6726ae9.htm" />
+          <HelpTOCNode Title="UseMiddleware(T1, T2, T3, T4, T5, T6) Method (IApplicationBuilder, Func(RequestDelegate, HttpContext, T1, T2, T3, T4, T5, T6, Task))" Url="html/fddf084a-4e19-19cc-e8be-48aa24f295cb.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="UseXssProtection Method " Url="html/dca97a58-100c-94da-5672-5932d4d2906d.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="2dbffa98-8c78-4d16-812e-67a499dbe030" Title="MvcOptionsExtensions Class" Url="html/ae14390c-4a78-30ea-b086-3bdb7a141c90.htm">
+      <HelpTOCNode Id="169cd4d4-2039-456e-9caf-a3f9106f517b" Title="MvcOptionsExtensions Methods" Url="html/b1534b52-7aad-7610-98b8-b1ba93264f19.htm">
+        <HelpTOCNode Title="UseMarkedModelBinderProviders Method " Url="html/93bce215-5240-01b3-ac52-ad90aa6ef96b.htm" />
+        <HelpTOCNode Id="519c2530-957b-43d9-abd2-4e7bc9f5f32d" Title="UseNumberModelBinder Method " Url="html/4be38326-20ce-fcfc-3974-0d7ecf85b6c5.htm">
+          <HelpTOCNode Title="UseNumberModelBinder Method (MvcOptions)" Url="html/6068fa39-b271-aeeb-71c2-dc97fb1d930e.htm" />
+          <HelpTOCNode Title="UseNumberModelBinder Method (MvcOptions, Func(String, String))" Url="html/9cffe1f9-0d2b-ce7a-a41d-80d91f6ea30d.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="cb407898-3794-4417-ad17-1c4503c1b0e2" Title="ServiceCollectionExtensions Class" Url="html/e0446d72-9c3d-92f9-c772-adbe8c166c70.htm">
+      <HelpTOCNode Id="aa2ec719-ee7b-4c89-99c5-5e00fdf537d3" Title="ServiceCollectionExtensions Methods" Url="html/d908df26-aea4-b160-899d-643210e8609c.htm">
+        <HelpTOCNode Title="AddDefaultViewModelFactory Method " Url="html/15ff6b77-1dc7-19a6-6e1b-6e7c24bfc668.htm" />
+        <HelpTOCNode Title="AddMarked Method " Url="html/3d28a3cf-3f1b-8183-b268-5c5e906d367a.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="09f3002c-7f01-4cf8-9a53-27e49c3ca54b" Title="SessionExtensions Class" Url="html/2226d322-3ccb-bb6c-da8a-e310cd205ccd.htm">
+      <HelpTOCNode Id="abfea8c1-4d45-421f-92b8-e0895e14253f" Title="SessionExtensions Methods" Url="html/760a948c-2891-904d-289e-e1693a79a5cb.htm">
+        <HelpTOCNode Id="17d9ab22-1a44-4f6b-a40f-9647d02433ea" Title="ContainsKey Method " Url="html/c45df97d-acca-a491-6f03-892e5dd24be9.htm">
+          <HelpTOCNode Title="ContainsKey Method (ISession, String)" Url="html/eb0553a5-11c5-fcc1-2900-677dcb76bff6.htm" />
+          <HelpTOCNode Title="ContainsKey Method (ISession, String, IEqualityComparer(String))" Url="html/3c9049eb-4b92-7aaf-53c2-a2c89f196362.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="GetBoolean Method " Url="html/a5d6d466-15f6-14d6-8329-b3ff43cfdca2.htm" />
+        <HelpTOCNode Title="GetInt64 Method " Url="html/4d41091e-ee8d-56b9-bb29-00b15fb2b2af.htm" />
+        <HelpTOCNode Title="GetRequiredBoolean Method " Url="html/eb239e18-e1e3-920b-4302-9a6215d12d41.htm" />
+        <HelpTOCNode Title="GetRequiredInt32 Method " Url="html/8a6985e0-206d-881b-7f74-3e59a02e6f51.htm" />
+        <HelpTOCNode Title="GetRequiredInt64 Method " Url="html/bef14b1a-c62e-60c4-39bc-5fdfae474f77.htm" />
+        <HelpTOCNode Title="GetRequiredString Method " Url="html/d53e5c3b-d8d5-b8b7-ec1f-984c8e805f35.htm" />
+        <HelpTOCNode Id="6b282359-b1f5-4b59-b748-b84973d44fbd" Title="Set Method " Url="html/83990f57-417b-6924-b5ec-006f3cc65b22.htm">
+          <HelpTOCNode Title="Set Method (ISession, String, Boolean)" Url="html/5e7b4dbc-9b19-175c-57d8-018d022ff1e9.htm" />
+          <HelpTOCNode Title="Set Method (ISession, String, Int32)" Url="html/c44ec2fc-fa09-2930-56d4-d53c77939992.htm" />
+          <HelpTOCNode Title="Set Method (ISession, String, Int64)" Url="html/b4578c7a-82fb-5327-ddd0-c1a816658ea1.htm" />
+          <HelpTOCNode Title="Set Method (ISession, String, String)" Url="html/9beec9c2-e458-cdd8-4dd8-1cb5445c878c.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Title="SetBoolean Method " Url="html/cf462b90-238e-42dd-337e-c8936696d476.htm" />
+        <HelpTOCNode Title="SetInt64 Method " Url="html/9b8634d7-bf5d-b88c-7156-6065a07df270.htm" />
+        <HelpTOCNode Id="54149fce-f7a1-4945-a00f-8658cde237f8" Title="TryGetValue Method " Url="html/e82f31c3-4715-21c2-a672-0026b4df76fc.htm">
+          <HelpTOCNode Title="TryGetValue Method (ISession, String, Boolean)" Url="html/f9ac6741-bf28-1541-f519-4833295fa8e2.htm" />
+          <HelpTOCNode Title="TryGetValue Method (ISession, String, Int32)" Url="html/79aefa3a-2a98-a14d-1eec-2a5afe7b49e5.htm" />
+          <HelpTOCNode Title="TryGetValue Method (ISession, String, Int64)" Url="html/49fdef6d-0fb3-3e8c-58f0-d80dfc959749.htm" />
+          <HelpTOCNode Title="TryGetValue Method (ISession, String, String)" Url="html/cd3778da-da34-094f-2a63-7ff3ceac58a0.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="81fe92c0-d300-4f31-8972-a25c5f6b33be" Title="SessionNewtonsoftJsonExtensions Class" Url="html/b99cc5db-d033-cd98-ed79-103e15e58c81.htm">
+      <HelpTOCNode Id="792dce60-ced0-475f-963e-e6bbf32bc66d" Title="SessionNewtonsoftJsonExtensions Methods" Url="html/b9ba0033-3298-e2e4-5ea5-3c4028bde896.htm">
+        <HelpTOCNode Title="Get(T) Method " Url="html/ea19a3da-6edb-7742-c1da-5fef47d27f52.htm" />
+        <HelpTOCNode Title="GetRequired(T) Method " Url="html/121b55dd-0a6e-1298-01fb-e8bfe0b8b5a0.htm" />
+        <HelpTOCNode Title="Set(T) Method " Url="html/5605ec7d-30c1-0660-a5a8-389f2429fb1d.htm" />
+        <HelpTOCNode Title="TryGetValue(T) Method " Url="html/6342db0e-3511-3f16-13b7-15f593a05330.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="5e219cf0-6ff0-47e6-b8fe-329eca5a9f7a" Title="SessionProtobufNetExtensions Class" Url="html/78606267-66a9-6349-d314-98f088d5c6a9.htm">
+      <HelpTOCNode Id="5a9f4162-4e52-4cc2-babf-9f5d9ca78f99" Title="SessionProtobufNetExtensions Methods" Url="html/53cfd76a-de36-fc3c-19dd-1027a21cd246.htm">
+        <HelpTOCNode Title="Get(T) Method " Url="html/f96a84c4-ff73-638d-18a8-3ca34a484d10.htm" />
+        <HelpTOCNode Title="GetRequired(T) Method " Url="html/57998e49-6719-2e5c-926e-d073949d62db.htm" />
+        <HelpTOCNode Title="Set(T) Method " Url="html/e718e689-f40a-2dda-eb29-36c2365d4210.htm" />
+        <HelpTOCNode Title="TryGetValue(T) Method " Url="html/9228cf3a-8892-a864-2f5e-02b15e7c4e95.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="1efc94a2-e949-4c81-96ec-939b6b83ea24" Title="ViewModelFactoryExtensions Class" Url="html/c97995e9-4807-2bdf-cfdb-5380bb0dc0d6.htm">
+      <HelpTOCNode Id="d92d7010-8677-4dad-90c3-7d274e0d0cb4" Title="ViewModelFactoryExtensions Methods" Url="html/a46a0edc-4471-cbec-0760-e795a9955ae4.htm">
+        <HelpTOCNode Id="421c3bb9-45b5-4e5f-9e5b-a07cd8d33db8" Title="GetActionResult Method " Url="html/410c3253-70a4-2655-875d-f7e0fc7cef00.htm">
+          <HelpTOCNode Title="GetActionResult(TViewModel) Method (IViewModelFactory, ControllerBase, Func(TViewModel, IActionResult))" Url="html/8deba0d3-f250-1d5a-67ac-f6eea0c8ffe7.htm" />
+          <HelpTOCNode Title="GetActionResult(TViewModel) Method (IViewModelFactory, ControllerBase, Func(TViewModel, IActionResult), Func(IActionResult))" Url="html/45d52535-fd54-0a1d-34c1-acf38dca918d.htm" />
+          <HelpTOCNode Title="GetActionResult(TViewModel, T1) Method (IViewModelFactory, ControllerBase, T1, Func(TViewModel, IActionResult))" Url="html/53da684e-58e2-f8db-da81-ae673e496a98.htm" />
+          <HelpTOCNode Title="GetActionResult(TViewModel, T1) Method (IViewModelFactory, ControllerBase, T1, Func(TViewModel, IActionResult), Func(IActionResult))" Url="html/62ba981e-5e73-56ec-b87e-4624de0c76a1.htm" />
+          <HelpTOCNode Title="GetActionResult(TViewModel, T1, T2) Method (IViewModelFactory, ControllerBase, T1, T2, Func(TViewModel, IActionResult))" Url="html/ac71ada1-aa24-4891-f083-b31a8fb05919.htm" />
+          <HelpTOCNode Title="GetActionResult(TViewModel, T1, T2) Method (IViewModelFactory, ControllerBase, T1, T2, Func(TViewModel, IActionResult), Func(IActionResult))" Url="html/9815bcd5-ee74-a34f-fb25-e307be40e848.htm" />
+          <HelpTOCNode Title="GetActionResult(TViewModel, T1, T2, T3) Method (IViewModelFactory, ControllerBase, T1, T2, T3, Func(TViewModel, IActionResult))" Url="html/56ca9b9a-64c5-b823-75e4-56689bd8ab3c.htm" />
+          <HelpTOCNode Title="GetActionResult(TViewModel, T1, T2, T3) Method (IViewModelFactory, ControllerBase, T1, T2, T3, Func(TViewModel, IActionResult), Func(IActionResult))" Url="html/e5caae52-dcf2-f551-4870-b522cf2244ea.htm" />
+          <HelpTOCNode Title="GetActionResult(TViewModel, T1, T2, T3, T4) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, Func(TViewModel, IActionResult))" Url="html/49068b23-d4d3-ea3e-3180-5e7f90560eb9.htm" />
+          <HelpTOCNode Title="GetActionResult(TViewModel, T1, T2, T3, T4) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, Func(TViewModel, IActionResult), Func(IActionResult))" Url="html/b4ea6a98-0ac5-2159-d6b8-e94f1d800f1c.htm" />
+          <HelpTOCNode Title="GetActionResult(TViewModel, T1, T2, T3, T4, T5) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, T5, Func(TViewModel, IActionResult))" Url="html/a4c7e286-4e70-22ed-cb7e-4080ba79f71d.htm" />
+          <HelpTOCNode Title="GetActionResult(TViewModel, T1, T2, T3, T4, T5) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, T5, Func(TViewModel, IActionResult), Func(IActionResult))" Url="html/da10b896-dc9e-e001-3019-5d547c135bde.htm" />
+          <HelpTOCNode Title="GetActionResult(TViewModel, T1, T2, T3, T4, T5, T6) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, T5, T6, Func(TViewModel, IActionResult))" Url="html/a9027b1a-ba3b-0799-9166-217cf2b8f9bc.htm" />
+          <HelpTOCNode Title="GetActionResult(TViewModel, T1, T2, T3, T4, T5, T6) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, T5, T6, Func(TViewModel, IActionResult), Func(IActionResult))" Url="html/da9d2b11-994b-36e4-9eef-9a042555c316.htm" />
+          <HelpTOCNode Title="GetActionResult(TViewModel, T1, T2, T3, T4, T5, T6, T7) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, T5, T6, T7, Func(TViewModel, IActionResult))" Url="html/b29b094a-d5bc-adeb-868d-e8864d70c2aa.htm" />
+          <HelpTOCNode Title="GetActionResult(TViewModel, T1, T2, T3, T4, T5, T6, T7) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, T5, T6, T7, Func(TViewModel, IActionResult), Func(IActionResult))" Url="html/e6682e38-88eb-ef45-0466-f68ef145da4a.htm" />
+          <HelpTOCNode Title="GetActionResult(TViewModel, T1, T2, T3, T4, T5, T6, T7, T8) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, T5, T6, T7, T8, Func(TViewModel, IActionResult))" Url="html/140a7915-d264-3add-ef3e-2c16db709ea7.htm" />
+          <HelpTOCNode Title="GetActionResult(TViewModel, T1, T2, T3, T4, T5, T6, T7, T8) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, T5, T6, T7, T8, Func(TViewModel, IActionResult), Func(IActionResult))" Url="html/0073d8f3-72cb-dd3c-c7a7-c745cc780e4f.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="40f90b32-bfe0-4c61-8998-574fc7a2331c" Title="GetActionResultAsync Method " Url="html/92edbcbb-e0b1-792a-d813-bd7ba95e7939.htm">
+          <HelpTOCNode Title="GetActionResultAsync(TViewModel) Method (IViewModelFactory, ControllerBase, Func(TViewModel, IActionResult))" Url="html/350716ba-c34e-7d73-8276-40ee790ae335.htm" />
+          <HelpTOCNode Title="GetActionResultAsync(TViewModel) Method (IViewModelFactory, ControllerBase, Func(TViewModel, IActionResult), Func(IActionResult))" Url="html/6252f904-8a53-f2c4-107f-3270004b12fe.htm" />
+          <HelpTOCNode Title="GetActionResultAsync(TViewModel, T1) Method (IViewModelFactory, ControllerBase, T1, Func(TViewModel, IActionResult))" Url="html/ee6c72b1-bedf-961d-8ccc-536fcf4ed90e.htm" />
+          <HelpTOCNode Title="GetActionResultAsync(TViewModel, T1) Method (IViewModelFactory, ControllerBase, T1, Func(TViewModel, IActionResult), Func(IActionResult))" Url="html/71ddfe61-8bbc-e188-f042-ecb686280b4b.htm" />
+          <HelpTOCNode Title="GetActionResultAsync(TViewModel, T1, T2) Method (IViewModelFactory, ControllerBase, T1, T2, Func(TViewModel, IActionResult))" Url="html/7b9084c3-6908-9b47-dc4a-a34fe5aa7300.htm" />
+          <HelpTOCNode Title="GetActionResultAsync(TViewModel, T1, T2) Method (IViewModelFactory, ControllerBase, T1, T2, Func(TViewModel, IActionResult), Func(IActionResult))" Url="html/63d7b715-98e4-5bf5-cda5-d7595cb5d8a6.htm" />
+          <HelpTOCNode Title="GetActionResultAsync(TViewModel, T1, T2, T3) Method (IViewModelFactory, ControllerBase, T1, T2, T3, Func(TViewModel, IActionResult))" Url="html/d3745ee4-c216-121f-6100-722c4046989a.htm" />
+          <HelpTOCNode Title="GetActionResultAsync(TViewModel, T1, T2, T3) Method (IViewModelFactory, ControllerBase, T1, T2, T3, Func(TViewModel, IActionResult), Func(IActionResult))" Url="html/49573923-d475-52af-7738-598ff57ddd2b.htm" />
+          <HelpTOCNode Title="GetActionResultAsync(TViewModel, T1, T2, T3, T4) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, Func(TViewModel, IActionResult))" Url="html/d0fd4381-808a-9b76-db26-3f24208e6c69.htm" />
+          <HelpTOCNode Title="GetActionResultAsync(TViewModel, T1, T2, T3, T4) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, Func(TViewModel, IActionResult), Func(IActionResult))" Url="html/e5eed005-1179-3881-261c-5d1a10608e73.htm" />
+          <HelpTOCNode Title="GetActionResultAsync(TViewModel, T1, T2, T3, T4, T5) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, T5, Func(TViewModel, IActionResult))" Url="html/cc99c3b2-bb1e-0b3e-d94d-a238e8f3b56b.htm" />
+          <HelpTOCNode Title="GetActionResultAsync(TViewModel, T1, T2, T3, T4, T5) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, T5, Func(TViewModel, IActionResult), Func(IActionResult))" Url="html/851264b5-cc73-4e37-788c-bf4cb26dedaf.htm" />
+          <HelpTOCNode Title="GetActionResultAsync(TViewModel, T1, T2, T3, T4, T5, T6) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, T5, T6, Func(TViewModel, IActionResult))" Url="html/0f0bbf72-da69-e867-ee7a-a6551befe7b5.htm" />
+          <HelpTOCNode Title="GetActionResultAsync(TViewModel, T1, T2, T3, T4, T5, T6) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, T5, T6, Func(TViewModel, IActionResult), Func(IActionResult))" Url="html/d9e2a5b9-09a2-e4dd-490b-631235495ba0.htm" />
+          <HelpTOCNode Title="GetActionResultAsync(TViewModel, T1, T2, T3, T4, T5, T6, T7) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, T5, T6, T7, Func(TViewModel, IActionResult))" Url="html/450ae438-e8fd-2b04-4a06-f842addf426a.htm" />
+          <HelpTOCNode Title="GetActionResultAsync(TViewModel, T1, T2, T3, T4, T5, T6, T7) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, T5, T6, T7, Func(TViewModel, IActionResult), Func(IActionResult))" Url="html/01fa650a-c033-d93d-6484-8b9f060ac9ca.htm" />
+          <HelpTOCNode Title="GetActionResultAsync(TViewModel, T1, T2, T3, T4, T5, T6, T7, T8) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, T5, T6, T7, T8, Func(TViewModel, IActionResult))" Url="html/950117ff-9e18-6521-7693-255455a3a42b.htm" />
+          <HelpTOCNode Title="GetActionResultAsync(TViewModel, T1, T2, T3, T4, T5, T6, T7, T8) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, T5, T6, T7, T8, Func(TViewModel, IActionResult), Func(IActionResult))" Url="html/cb4c7777-d3ce-0cec-ce58-fc0a88b69658.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="4ff685be-a7da-46a4-bef5-c3cd6b0c9f28" Title="GetViewModel Method " Url="html/150465ec-3b04-f76f-5271-788887b15355.htm">
+          <HelpTOCNode Title="GetViewModel(TViewModel) Method (IViewModelFactory, ControllerBase)" Url="html/c7f4fd25-3c55-d399-5d58-1e1224c09d64.htm" />
+          <HelpTOCNode Title="GetViewModel(TViewModel, T1) Method (IViewModelFactory, ControllerBase, T1)" Url="html/bf1c066d-bde8-f88d-3c01-c91bc43b481d.htm" />
+          <HelpTOCNode Title="GetViewModel(TViewModel, T1, T2) Method (IViewModelFactory, ControllerBase, T1, T2)" Url="html/85d6acdc-9574-9b3d-c3c3-0a7de027cd04.htm" />
+          <HelpTOCNode Title="GetViewModel(TViewModel, T1, T2, T3) Method (IViewModelFactory, ControllerBase, T1, T2, T3)" Url="html/9ef20bcc-efaa-0f39-87ce-0aeda7507bd4.htm" />
+          <HelpTOCNode Title="GetViewModel(TViewModel, T1, T2, T3, T4) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4)" Url="html/5e36b123-a751-3a54-f73c-acbe08a266ce.htm" />
+          <HelpTOCNode Title="GetViewModel(TViewModel, T1, T2, T3, T4, T5) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, T5)" Url="html/1a8e67da-693b-02f3-c7ca-40150385280d.htm" />
+          <HelpTOCNode Title="GetViewModel(TViewModel, T1, T2, T3, T4, T5, T6) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, T5, T6)" Url="html/eb053213-be3e-21c7-40db-c7f4ef86fa76.htm" />
+          <HelpTOCNode Title="GetViewModel(TViewModel, T1, T2, T3, T4, T5, T6, T7) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, T5, T6, T7)" Url="html/5318d370-9b6c-871c-36f0-5e32468ad8ed.htm" />
+          <HelpTOCNode Title="GetViewModel(TViewModel, T1, T2, T3, T4, T5, T6, T7, T8) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, T5, T6, T7, T8)" Url="html/7aca6a67-2627-3563-c49d-11e7eb44fa5d.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="840a2a10-cb34-4fe0-800e-d2c5126bbd0f" Title="GetViewModelAsync Method " Url="html/1af7fcfd-4ea4-33bb-e0b1-eab64d2b7655.htm">
+          <HelpTOCNode Title="GetViewModelAsync(TViewModel) Method (IViewModelFactory, ControllerBase)" Url="html/aa5e051b-fa54-fcf2-6fbd-85de90811851.htm" />
+          <HelpTOCNode Title="GetViewModelAsync(TViewModel, T1) Method (IViewModelFactory, ControllerBase, T1)" Url="html/02990c78-597e-a6cd-2ccc-fe9d06b2fb70.htm" />
+          <HelpTOCNode Title="GetViewModelAsync(TViewModel, T1, T2) Method (IViewModelFactory, ControllerBase, T1, T2)" Url="html/61550dc1-7c7c-2540-bf09-5218dfc06ccb.htm" />
+          <HelpTOCNode Title="GetViewModelAsync(TViewModel, T1, T2, T3) Method (IViewModelFactory, ControllerBase, T1, T2, T3)" Url="html/d870a87b-e849-3435-60f6-3f03c9843cf1.htm" />
+          <HelpTOCNode Title="GetViewModelAsync(TViewModel, T1, T2, T3, T4) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4)" Url="html/25d87a12-9e5b-51ec-d0d0-f18e55fe6c15.htm" />
+          <HelpTOCNode Title="GetViewModelAsync(TViewModel, T1, T2, T3, T4, T5) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, T5)" Url="html/8fbc3501-1d5d-83e0-4111-0c62f00f060c.htm" />
+          <HelpTOCNode Title="GetViewModelAsync(TViewModel, T1, T2, T3, T4, T5, T6) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, T5, T6)" Url="html/82e1d1e1-4ffa-be37-e2f4-2b22d9c4d1f5.htm" />
+          <HelpTOCNode Title="GetViewModelAsync(TViewModel, T1, T2, T3, T4, T5, T6, T7) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, T5, T6, T7)" Url="html/7ef6a88d-e99b-a2d3-ef2a-397b83048109.htm" />
+          <HelpTOCNode Title="GetViewModelAsync(TViewModel, T1, T2, T3, T4, T5, T6, T7, T8) Method (IViewModelFactory, ControllerBase, T1, T2, T3, T4, T5, T6, T7, T8)" Url="html/6752f09b-028c-a74a-bbf3-d81146a58f91.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="ad85bb64-2384-4d9d-a084-8ecdbfb6c0e8" Title="AspNetCore.Tools.Middlewares" Url="html/53a0e15e-3df7-a620-7ad8-688e30310df0.htm">
+    <HelpTOCNode Id="0089b3e7-a0d4-46b2-8e2c-9f177d2c4f85" Title="CSPMiddleware Class" Url="html/764fe6d9-0c32-0779-4399-300b758dae0a.htm">
+      <HelpTOCNode Title="CSPMiddleware Constructor " Url="html/c66eea1c-3802-bb20-d0bd-53ca38bdda40.htm" />
+      <HelpTOCNode Id="79426d52-cf2c-4fb7-afa6-dc81a73dfbb2" Title="CSPMiddleware Properties" Url="html/3652fdd9-5b4d-b1f3-fdb2-951091e727d2.htm">
+        <HelpTOCNode Title="Policy Property " Url="html/47edff09-a11c-d0b8-db53-0e914840ec14.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="9ae9361e-3345-405c-ba65-45084533fe63" Title="CSPMiddleware Methods" Url="html/efd5ec06-73b5-a0ff-89fe-e7d8c32f8694.htm">
+        <HelpTOCNode Title="Invoke Method " Url="html/f3dd2776-9d2a-fc20-d71b-91c5a7deb8ed.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="319a2442-ab3e-4624-a761-0b5df9df16e6" Title="CSPMiddleware Fields" Url="html/1f1a0e61-85e8-2a57-9ddc-b3a6bcb7bf54.htm">
+        <HelpTOCNode Title="DefaultPolicy Field" Url="html/eb428e57-bf6d-562b-c7e5-42cce7fbc37d.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="7753a26a-3555-4d4f-a97e-8db2abd62a6e" Title="MiddlewareAttribute Class" Url="html/1a85713b-62ce-b145-2685-ef80911c7c70.htm">
+      <HelpTOCNode Title="MiddlewareAttribute Constructor " Url="html/847c147c-5337-1d1e-7010-f246998c1831.htm" />
+      <HelpTOCNode Id="79b897de-be4f-4814-9bfe-7b0ddcfb66ea" Title="MiddlewareAttribute Properties" Url="html/4fe95582-ee97-59a5-d4f8-64667c750700.htm">
+        <HelpTOCNode Title="Arguments Property " Url="html/6a2ddbdf-40e7-90db-0526-bcef6e1da5bd.htm" />
+        <HelpTOCNode Title="Priority Property " Url="html/3df8c31b-4996-dcea-054d-e49cad682d70.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="MiddlewareAttribute Methods" Url="html/c5aa7b39-4751-e52a-2db0-15158957fdb1.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="b1f64062-0788-449f-8734-65c7272eb6bc" Title="MiddlewareBase Class" Url="html/7c742695-e885-0cf9-dc47-be642f157630.htm">
+      <HelpTOCNode Title="MiddlewareBase Constructor " Url="html/5615db1f-efa1-5dcc-bfa5-0df09b4eca23.htm" />
+      <HelpTOCNode Id="b47a16ec-103a-4a03-9146-539c41558c4d" Title="MiddlewareBase Methods" Url="html/063f31ff-37ed-91c8-dfdc-af57288c998d.htm">
+        <HelpTOCNode Title="Invoke Method " Url="html/23c2deff-5563-f5fd-9e04-0cf8e12a035b.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="ed22b743-8574-45a3-8f6c-ec8abb02d264" Title="MiddlewareBase Fields" Url="html/79903643-4427-dd5d-49bb-b0fc4711647b.htm">
+        <HelpTOCNode Title="Next Field" Url="html/34b4c979-ccc0-48bc-f925-37da9ffa1e17.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f6b9358a-e493-4a7f-8c69-936ca8a2e4f6" Title="XSSMiddleware Class" Url="html/1318409f-9586-4651-eb4a-0091ffbfd64d.htm">
+      <HelpTOCNode Title="XSSMiddleware Constructor " Url="html/5b2fa472-fcd5-94a7-b892-b1ff5eedb5f3.htm" />
+      <HelpTOCNode Id="1b7a2d2b-8cd9-463f-b88f-cb4ddb3e065a" Title="XSSMiddleware Methods" Url="html/bcbb1a4a-e29e-07b6-461e-deaf793ff99b.htm">
+        <HelpTOCNode Title="Invoke Method " Url="html/cf90fcf0-1489-5f23-5f71-b5940b260fe0.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="XSSMiddleware Fields" Url="html/748d1751-a0d1-5628-1ad9-c84470471e50.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="6ba70348-f1a0-43a2-a6c1-6883d539a197" Title="AspNetCore.Tools.ModelBinding" Url="html/b80acfa1-8a67-2adf-ec56-e2e6c479811c.htm">
+    <HelpTOCNode Id="fe5dd3bb-7982-499a-aaae-7144986f6d07" Title="AsyncModelParserBase Class" Url="html/b92f3ce2-6693-d40c-7fff-1f8b3da55d78.htm">
+      <HelpTOCNode Title="AsyncModelParserBase Constructor " Url="html/49d52f0e-cc5a-c2d9-10b9-ffb07dca7475.htm" />
+      <HelpTOCNode Id="e14f3ec3-52eb-4d97-83d2-209285ca478e" Title="AsyncModelParserBase Methods" Url="html/5d9295de-4cd9-f52c-d6f7-fb63e720ef53.htm">
+        <HelpTOCNode Title="BindModelAsync Method " Url="html/01a5d53a-cbcc-0701-6094-0dab2ac61162.htm" />
+        <HelpTOCNode Title="TryParseAsync Method " Url="html/f949b40d-73d9-92b7-c542-d1d6fc3ed06f.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="de81d883-cbe2-4cc1-aa1c-beb20f8f58f6" Title="AsyncModelParserBase Fields" Url="html/4b1c1710-6374-6745-b435-c07d62c794df.htm">
+        <HelpTOCNode Title="DefaultErrorMessageProvider Field" Url="html/51937178-e9ab-f22f-07ca-d540c2857992.htm" />
+        <HelpTOCNode Title="ErrorMessageProvider Field" Url="html/b9ba4773-bfe5-04db-ea86-5140d100fc92.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="f35aa797-e966-4f4a-a443-b30a97a88394" Title="AsyncModelParserBase(TModel) Class" Url="html/8c91d980-e507-b5ce-0a10-3476ab453607.htm">
+      <HelpTOCNode Title="AsyncModelParserBase(TModel) Constructor " Url="html/1ac883d0-50e0-ce64-bee5-cf2067405126.htm" />
+      <HelpTOCNode Id="c1b597b8-7199-4e04-8f2a-6b2c33656eae" Title="AsyncModelParserBase(TModel) Methods" Url="html/01ab1032-e4f1-f600-a001-14592ea0b7e7.htm">
+        <HelpTOCNode Title="TryParseAsync Method " Url="html/449109d3-a325-a3bd-505d-b29e210e38e1.htm" />
+        <HelpTOCNode Title="TryParseModelAsync Method " Url="html/90142a92-587d-3046-952c-d2f6db2bc119.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="AsyncModelParserBase(TModel) Fields" Url="html/de1cca71-06f7-d6b2-92a7-e7972ae1fb90.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="3494ad2a-827b-4784-9825-4a722c83fbff" Title="AutoModelBinderAttribute Class" Url="html/b938be0d-f520-4467-b499-482ba98bd687.htm">
+      <HelpTOCNode Id="4cb8e0b1-9aa3-441f-89f8-a89ce1ffc1d9" Title="AutoModelBinderAttribute Constructor " Url="html/236123eb-3304-a4b1-42e3-4ad0323ef330.htm">
+        <HelpTOCNode Title="AutoModelBinderAttribute Constructor " Url="html/e1dc8249-078f-c9f0-cd91-5f5a76cede30.htm" />
+        <HelpTOCNode Title="AutoModelBinderAttribute Constructor (Type[])" Url="html/799b56f3-e454-95c6-f1df-245c52a7afbc.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="870420f6-bd30-4026-947c-f79b889603a0" Title="AutoModelBinderAttribute Properties" Url="html/68bf426f-b87e-a3da-ad5c-e700b222328a.htm">
+        <HelpTOCNode Title="ModelBinderProvider Property " Url="html/66063ca9-2930-0bb3-6f79-5c9a8c2b2a9d.htm" />
+        <HelpTOCNode Title="Priority Property " Url="html/04f945c4-0a0b-e2d7-310e-4114065c9eb6.htm" />
+        <HelpTOCNode Title="SupportedTypes Property " Url="html/159e1003-0482-e890-c659-5395a26ec72f.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="AutoModelBinderAttribute Methods" Url="html/2e12bd40-2cf0-aa5e-9048-aad85b0e72e0.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="a2d2ad75-d870-4aa2-8150-df5754e638d2" Title="DecimalBinder Class" Url="html/acddd9f7-bd2b-66a7-c19f-3bae4c8b5bf4.htm">
+      <HelpTOCNode Id="35ecfe99-d25d-4632-8c66-7716c9e4a261" Title="DecimalBinder Constructor " Url="html/a498ced2-354a-844a-eed2-3704d82bf709.htm">
+        <HelpTOCNode Title="DecimalBinder Constructor (MvcOptions)" Url="html/5e136e15-2201-93c8-61eb-cfffb3941adf.htm" />
+        <HelpTOCNode Title="DecimalBinder Constructor (Func(String, String))" Url="html/3de8df8f-3921-2ebe-4693-46ee7ccdfc05.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="5af2c820-2948-426c-8dd6-022db6fd7e54" Title="DecimalBinder Methods" Url="html/73e2848e-07af-67d3-204a-b1d2ed9acaae.htm">
+        <HelpTOCNode Title="TryParse Method " Url="html/f142db0e-7ecf-fd01-862d-f08ea596327c.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="DecimalBinder Fields" Url="html/02b7d5c4-1adb-600b-746b-bc150c93dd60.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="12fd2abb-b3e4-48a8-8643-2df26f877ebe" Title="DIModelBinderProviderBase(TModelBinder) Class" Url="html/255ac3c6-cb48-4f2a-b0e3-2e084abd63e5.htm">
+      <HelpTOCNode Title="DIModelBinderProviderBase(TModelBinder) Constructor " Url="html/c3473adf-1ec8-b58f-9dd5-8809d067d522.htm" />
+      <HelpTOCNode Id="ad8246b9-323a-4e20-aa62-31f8f6faebc1" Title="DIModelBinderProviderBase(TModelBinder) Methods" Url="html/b829a6a4-9b66-d5e1-0fab-6049e488c5c8.htm">
+        <HelpTOCNode Title="GetBinder Method " Url="html/e8e8faf7-b032-d609-b9a3-45b7d81342d1.htm" />
+        <HelpTOCNode Title="IsSuitable Method " Url="html/b5336a4c-1c90-b4ec-9966-107e8c9b0d9d.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="b9134fa1-3c8c-4e1e-a6d6-c2abdd6d5852" Title="DoubleBinder Class" Url="html/f5617829-2122-3044-0a39-06d9ec4e45b0.htm">
+      <HelpTOCNode Id="63a68c59-77f8-4a51-b82c-ed35ce6622cf" Title="DoubleBinder Constructor " Url="html/21785c2a-e429-4647-7761-bad794bc439d.htm">
+        <HelpTOCNode Title="DoubleBinder Constructor (MvcOptions)" Url="html/c20efad4-733a-16f6-20bc-2b8cdd0b0d3e.htm" />
+        <HelpTOCNode Title="DoubleBinder Constructor (Func(String, String))" Url="html/7d9d92b3-3f8e-fe33-ba23-da6e39ab91e2.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="44c1755f-729b-4963-b342-ab8b98b5b25e" Title="DoubleBinder Methods" Url="html/943a8244-752d-9782-0139-f7a21f0aacc2.htm">
+        <HelpTOCNode Title="TryParse Method " Url="html/1d1dc035-9675-976c-4f3f-a8817c227e51.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="DoubleBinder Fields" Url="html/69f06628-5d48-f18b-96a0-9d8147704f25.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="e44d4157-a5bd-44dc-a12f-fdaa7b7261d6" Title="FloatBinder Class" Url="html/9f37196a-e70e-7ed0-0abe-5dfe13155983.htm">
+      <HelpTOCNode Id="06edca31-6968-48bb-a6ef-2c659e199472" Title="FloatBinder Constructor " Url="html/df8245b0-5554-928e-fbda-6dd04167ffa9.htm">
+        <HelpTOCNode Title="FloatBinder Constructor (MvcOptions)" Url="html/33b63402-9cc7-bd6e-c6d3-312ec20d6630.htm" />
+        <HelpTOCNode Title="FloatBinder Constructor (Func(String, String))" Url="html/bae96954-590e-6ca9-7a14-2ecc3b65c251.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="11b437dd-f337-46c5-8a25-3e0251c837d5" Title="FloatBinder Methods" Url="html/219ee992-a2df-a066-d1e1-a70e5450fd6b.htm">
+        <HelpTOCNode Title="TryParse Method " Url="html/ff6b126b-a5a8-8814-bb9d-8574514c239b.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="FloatBinder Fields" Url="html/58fe05cd-16b0-9bec-f593-bf83929f947a.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="7db33d38-1345-45e4-ba31-a8ffc0bfc9fa" Title="ModelBinderBase Class" Url="html/30ad827a-3c78-bc6f-a0e2-a29b3c3b6fab.htm">
+      <HelpTOCNode Title="ModelBinderBase Constructor " Url="html/472f08e6-e93d-75cb-fa57-b6698c103571.htm" />
+      <HelpTOCNode Id="1307d08b-3304-4e9d-9200-4af7abb7212f" Title="ModelBinderBase Methods" Url="html/4a5782ed-d786-e835-cba0-5138379f3e99.htm">
+        <HelpTOCNode Title="BindModel Method " Url="html/bf386bd9-bb3c-601f-430f-7c67a636fc77.htm" />
+        <HelpTOCNode Title="BindModelAsync Method " Url="html/6126a090-d93a-90c2-a262-01aa2e3357dd.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="51b4cb25-6832-40e8-911f-b5216a31f264" Title="ModelBinderProviderAttribute Class" Url="html/d262d3b8-529b-aa31-9fc1-0d745675d641.htm">
+      <HelpTOCNode Title="ModelBinderProviderAttribute Constructor " Url="html/486608c1-44a2-3837-9c99-52a1ef8e8e19.htm" />
+      <HelpTOCNode Id="8288f5b2-f826-48c3-b24b-60d35726ecb2" Title="ModelBinderProviderAttribute Properties" Url="html/cf39dc2e-bbee-9266-6633-ed889379064a.htm">
+        <HelpTOCNode Title="Priority Property " Url="html/7f74faff-2852-0677-ac65-e6e082411edb.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="ModelBinderProviderAttribute Methods" Url="html/aee53474-e0bb-830c-ec21-9efa5a3f3a48.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="0a6d8c72-5736-4a4b-9030-7b7853286cff" Title="ModelBinderProviderBase Class" Url="html/ca284f19-79b9-ec3a-0e7b-3d469ba8c89d.htm">
+      <HelpTOCNode Title="ModelBinderProviderBase Constructor " Url="html/a3806d3e-c470-0f05-b43f-872478f97711.htm" />
+      <HelpTOCNode Id="c1fa2640-87d5-4a35-8e58-dfa84b482ff4" Title="ModelBinderProviderBase Methods" Url="html/f6dc0052-bfed-d3f3-fbb4-0cde70358564.htm">
+        <HelpTOCNode Title="GetBinder Method " Url="html/dc3d0a2b-5458-0712-f6d0-8173e807602a.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="b4089a4d-4775-4439-a592-2c703651e9b5" Title="ModelParserBase Class" Url="html/275550af-2164-6160-cd6d-76560e97a1f6.htm">
+      <HelpTOCNode Title="ModelParserBase Constructor " Url="html/f7bbb0eb-2a25-3f9a-6f8d-628149dfefc1.htm" />
+      <HelpTOCNode Id="3279590f-7d56-4bfe-8867-b4ff10bcd9f4" Title="ModelParserBase Methods" Url="html/1bf216ca-ce5e-afc3-328b-9d85a629aca2.htm">
+        <HelpTOCNode Title="BindModelAsync Method " Url="html/cf28004c-308e-6607-14b6-03558478c508.htm" />
+        <HelpTOCNode Title="TryParse Method " Url="html/30459df3-ab67-2b40-841c-3eeb608a5981.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="4628236b-271c-4c03-80fb-fc2596c89c55" Title="ModelParserBase Fields" Url="html/b87fc8ac-312e-021c-1067-84564e37edf2.htm">
+        <HelpTOCNode Title="DefaultErrorMessageProvider Field" Url="html/8e72cbd0-a491-d3e5-437e-3ebbb0642c6c.htm" />
+        <HelpTOCNode Title="ErrorMessageProvider Field" Url="html/3b551449-9de2-ac4d-d969-f8505b83e7d6.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="564f55a2-3d81-4a5c-878a-c419ffd03910" Title="ModelParserBase(TModel) Class" Url="html/1ed23233-31cb-e07f-cf7c-76d70eda2ef3.htm">
+      <HelpTOCNode Title="ModelParserBase(TModel) Constructor " Url="html/d19612a2-efd6-3a24-2e5f-6783591cb004.htm" />
+      <HelpTOCNode Id="babc7aae-7106-4a64-91af-78a5a8d1830c" Title="ModelParserBase(TModel) Methods" Url="html/30eb4657-502b-03fc-233a-eb228d72ba33.htm">
+        <HelpTOCNode Id="56ae2adb-c5f4-4a1d-a9e5-0d6b15c61f6c" Title="TryParse Method " Url="html/d9804ea5-f27a-3f77-31a1-31b2f6a4f9db.htm">
+          <HelpTOCNode Title="TryParse Method (String, Object)" Url="html/f98110c1-b3ee-d00c-b035-0fe511ecd12e.htm" />
+          <HelpTOCNode Title="TryParse Method (String, TModel)" Url="html/53a26bc2-d496-da22-3170-2c34f19b4d5b.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+      <HelpTOCNode Title="ModelParserBase(TModel) Fields" Url="html/503d1568-aa19-d0a7-24fe-19e620b07b20.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="db3802d5-9b60-46f6-b972-80539036cbd8" Title="NumberBinderProvider Class" Url="html/d759fc30-53d4-c04d-e5e4-ccafb6d764a4.htm">
+      <HelpTOCNode Id="8059d435-0f8e-4e61-b4bb-9e42277dde98" Title="NumberBinderProvider Constructor " Url="html/605093cf-9b34-1c40-8233-cbcb0e079ec8.htm">
+        <HelpTOCNode Title="NumberBinderProvider Constructor (MvcOptions)" Url="html/d78589cc-7591-f145-cd79-9877a26276a3.htm" />
+        <HelpTOCNode Title="NumberBinderProvider Constructor (Func(String, String))" Url="html/c11064ab-0998-28a1-6c04-bf443d6e2863.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="913df331-dec0-44e0-a5d4-66a8dd387130" Title="NumberBinderProvider Methods" Url="html/77f1edf4-2429-d106-bfee-19b488aeff05.htm">
+        <HelpTOCNode Title="GetBinder Method " Url="html/0fb8e095-c506-103a-8f49-2222a75caf73.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="18bafc5b-a6a3-451d-b952-fa552faccde9" Title="SingletonModelBinderProviderBase(TModelBinder) Class" Url="html/370e2719-a236-203a-1cf5-15f22fd2d5e3.htm">
+      <HelpTOCNode Title="SingletonModelBinderProviderBase(TModelBinder) Constructor " Url="html/dfc5e848-4bc1-45de-5212-b5d02f307b49.htm" />
+      <HelpTOCNode Id="4d9562c2-27ff-4e57-a0f1-22aae8930ba0" Title="SingletonModelBinderProviderBase(TModelBinder) Methods" Url="html/ed5acaeb-5935-3948-b876-4afe63c11121.htm">
+        <HelpTOCNode Title="GetBinder Method " Url="html/2a67e96f-6205-1911-8c4c-bec01cc2059a.htm" />
+        <HelpTOCNode Title="IsSuitable Method " Url="html/4141eb98-d052-106c-82cd-4aa023b1320c.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Id="c6eb6514-35a5-49fd-a719-228250e02a82" Title="SingletonModelBinderProviderBase(TModelBinder) Fields" Url="html/5ee16781-7038-f647-1c56-f3cfb85ce70d.htm">
+        <HelpTOCNode Title="ModelBinderInstance Field" Url="html/1e5dc9fc-f220-4a51-934e-8a144cab3655.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="c287e8fe-1a29-4af8-9926-4c0c09497e45" Title="AspNetCore.Tools.Services" Url="html/fc2e8a83-2785-3f34-5506-0bb696f62b56.htm">
+    <HelpTOCNode Id="10968d60-830c-4e5f-8754-cec3b6254466" Title="HostedServiceAttribute Class" Url="html/d0a0c820-f881-85e3-4d5a-0dc44d5d4ea1.htm">
+      <HelpTOCNode Title="HostedServiceAttribute Constructor " Url="html/2ec76b0f-b108-14ac-36b1-f576a9ccf86f.htm" />
+      <HelpTOCNode Id="ca0a7cbd-535c-4eeb-a41b-72a8115f0747" Title="HostedServiceAttribute Properties" Url="html/7c18edbe-9867-c6a5-56e8-8816b7d5fc64.htm">
+        <HelpTOCNode Title="Factory Property " Url="html/a9526418-fc57-04eb-f7ed-061c7329214a.htm" />
+        <HelpTOCNode Title="UseAutoImplementedFactory Property " Url="html/556f5c5a-aebd-591d-644c-ac3dd26c5232.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="HostedServiceAttribute Methods" Url="html/4328742a-8297-77ef-22be-36034ac30896.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="a6bee8a5-fcb5-48e1-9c69-e8a006e7566e" Title="InjectServiceAttribute Class" Url="html/48787295-7710-2346-178b-b0167e43000c.htm">
+      <HelpTOCNode Title="InjectServiceAttribute Constructor " Url="html/a1c76a2d-11b6-bb66-ebcc-d97d7d787d1f.htm" />
+      <HelpTOCNode Title="InjectServiceAttribute Properties" Url="html/cda4047f-c70b-bf79-ca4c-37f9a61524c0.htm" />
+      <HelpTOCNode Title="InjectServiceAttribute Methods" Url="html/543700c9-c920-e6cf-7ccf-f2286fdf4c72.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="3041de54-6b58-4d2a-98fa-b307a6e176b9" Title="IServiceAttribute Interface" Url="html/bfad329a-37ea-9097-3ed4-582c71b87a83.htm">
+      <HelpTOCNode Id="4391102d-03e5-4340-bdfe-538886961876" Title="IServiceAttribute Properties" Url="html/e6782832-f1a8-75ee-7967-06f4e17ebffd.htm">
+        <HelpTOCNode Title="Factory Property " Url="html/fd72b712-921e-dbec-f145-e1c5336afe07.htm" />
+        <HelpTOCNode Title="Lifetime Property " Url="html/1c529faf-3cae-ccc7-8f1d-72f6419c8031.htm" />
+        <HelpTOCNode Title="ServiceType Property " Url="html/98a9d39c-e892-72fd-13b0-51867f438df1.htm" />
+        <HelpTOCNode Title="UseAutoImplementedFactory Property " Url="html/d43d8de6-7a7a-0ae7-d00d-2dbcf82a1ac6.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="ffe22eca-17f1-4244-96c4-cd2923b332f5" Title="IServiceFactory Interface" Url="html/39fec19c-4f14-7bcd-7141-c94ab2804ada.htm">
+      <HelpTOCNode Id="e6c4cc56-8fa8-4c65-84ac-8c48dff92952" Title="IServiceFactory Methods" Url="html/0a96cc4f-2357-9553-44a0-17fa5a5af70c.htm">
+        <HelpTOCNode Title="GetService Method " Url="html/67b6a538-1994-5650-18df-9ca75981f7fa.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="e4567e94-1fdd-4bda-906e-36f1929d49fb" Title="IServiceFactory(TService) Interface" Url="html/5af495ae-06cb-e05f-45e0-d3342c1df501.htm">
+      <HelpTOCNode Id="4a12d41c-0c5d-490b-9ca1-0048a5648ae4" Title="IServiceFactory(TService) Methods" Url="html/b33a4d6a-0c06-167c-544b-1d5a32890c39.htm">
+        <HelpTOCNode Title="GetService Method " Url="html/0f88eb88-29c5-ae3f-cde7-aaa95c3a4863.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="fcb6b468-bf5b-4665-960c-ba65f27b8280" Title="ScopedServiceAttribute Class" Url="html/beec5c34-a892-3e07-044a-86ac6f12f256.htm">
+      <HelpTOCNode Title="ScopedServiceAttribute Constructor " Url="html/0b4ec373-a1ba-5127-a521-2fd0f41ee000.htm" />
+      <HelpTOCNode Id="9882652d-fae9-4508-8e57-15fc2a2dd5b3" Title="ScopedServiceAttribute Properties" Url="html/918f8ca8-c1ee-1fff-fd2f-d0804a380cdb.htm">
+        <HelpTOCNode Title="Factory Property " Url="html/ddfc6cd3-5cb5-9e6c-5d0c-46e55240e7cf.htm" />
+        <HelpTOCNode Title="ServiceType Property " Url="html/c4fb3e39-ebbd-0cde-ab3b-5516be9aad51.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="ScopedServiceAttribute Methods" Url="html/fb02c011-5f96-b9b4-7d61-1febf9baa996.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="ba33b4a1-387e-4b3b-8cec-c5a3d3c8f25f" Title="ServiceAttribute Class" Url="html/0a805f32-d4de-38e7-abc2-a90cbb75e71e.htm">
+      <HelpTOCNode Title="ServiceAttribute Constructor " Url="html/65264053-c626-3332-619b-1e212490e324.htm" />
+      <HelpTOCNode Id="88d83321-b335-402d-a088-57a3f86e2cff" Title="ServiceAttribute Properties" Url="html/763c9f34-9e9a-deb3-b763-9ac2083050f5.htm">
+        <HelpTOCNode Title="Factory Property " Url="html/a36f1c22-0a07-3007-ce78-ea2e9deb8a48.htm" />
+        <HelpTOCNode Title="Lifetime Property " Url="html/24a7cc4f-ccef-990d-f49e-be8b66b4c08d.htm" />
+        <HelpTOCNode Title="ServiceType Property " Url="html/df4bb2eb-5a6e-57ea-5517-c6bde3974c37.htm" />
+        <HelpTOCNode Title="UseAutoImplementedFactory Property " Url="html/bf7ca2df-8e02-b4fc-5d6b-a568782aaed7.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="ServiceAttribute Methods" Url="html/d1a24f2e-997d-319d-b56e-90a1cddb5b2a.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="b80c10df-f7be-44ae-b1c4-af93bd49efae" Title="SingletonServiceAttribute Class" Url="html/333017cf-8dfa-4abf-b891-076c1b4b9c7a.htm">
+      <HelpTOCNode Title="SingletonServiceAttribute Constructor " Url="html/9f103560-ce4f-6e27-f14a-0cecf983c0c0.htm" />
+      <HelpTOCNode Id="4acc08ca-1de6-4740-b841-9a18d3250074" Title="SingletonServiceAttribute Properties" Url="html/80d8be2c-f4d7-10e2-66f5-6118cf32c5f0.htm">
+        <HelpTOCNode Title="Factory Property " Url="html/a8c70bb3-9cc1-7985-db06-dcf16cf5ba91.htm" />
+        <HelpTOCNode Title="ServiceType Property " Url="html/924183f5-b5c6-38d2-db12-6143895e6040.htm" />
+        <HelpTOCNode Title="UseAutoImplementedFactory Property " Url="html/6eefe923-ed14-2c3a-02a8-6395ca021325.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="SingletonServiceAttribute Methods" Url="html/d2a79a76-d914-b04b-528a-43ce4820060a.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="59a05774-f841-4416-8c17-f3d2ab31f4b0" Title="TransientServiceAttribute Class" Url="html/0a2b3c28-d1fa-2bbb-eb73-bdae29cd7d45.htm">
+      <HelpTOCNode Title="TransientServiceAttribute Constructor " Url="html/ffa6d8ad-310d-884b-05d3-b244896d690b.htm" />
+      <HelpTOCNode Id="b05a1f00-5248-485d-80df-1ab9da2ea032" Title="TransientServiceAttribute Properties" Url="html/56bb38a1-0974-6be2-5ee6-2b396668d470.htm">
+        <HelpTOCNode Title="Factory Property " Url="html/abcc5b45-6385-4de6-53e3-5a7bed43e183.htm" />
+        <HelpTOCNode Title="ServiceType Property " Url="html/746d55c3-3144-2e1d-de2d-c6c1ffc86984.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="TransientServiceAttribute Methods" Url="html/3b0d5ad3-33f8-9355-77ef-d715b72148d7.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="3dcfe57c-a825-4d70-95a4-c4615b22d613" Title="AspNetCore.Tools.Session" Url="html/83373b71-1c87-8fac-3133-193d4504bed4.htm">
+    <HelpTOCNode Id="99a659ec-33db-483d-87e5-fcd0161a4a95" Title="SessionProtobufNetSerializer(T) Class" Url="html/ab439666-b08c-66fd-4231-496daad4e190.htm">
+      <HelpTOCNode Title="SessionProtobufNetSerializer(T) Constructor " Url="html/7f1397c9-400e-1802-67bb-fbf0c8da91d0.htm" />
+      <HelpTOCNode Id="b2e97757-f6c7-4b2c-8be3-11a5c2d47401" Title="SessionProtobufNetSerializer(T) Methods" Url="html/8c51df43-2e38-e8a2-6907-e899e134633b.htm">
+        <HelpTOCNode Title="Deserialize Method " Url="html/5a2a3592-27fd-7b5b-21d2-7d08c3754227.htm" />
+        <HelpTOCNode Title="Serialize Method " Url="html/2b1ee034-b508-fffd-da7f-03c3669b6fbd.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="26f7837c-7813-44df-9928-d419f4165a61" Title="SessionValueSerializer Class" Url="html/dad26c44-aa33-7e89-9fde-fb8ec39c92ee.htm">
+      <HelpTOCNode Title="SessionValueSerializer Constructor " Url="html/cb550459-f5d2-ac86-d07a-c29b7491c115.htm" />
+      <HelpTOCNode Id="dc2f8ee0-0ae0-4d0f-938f-0d821315ebdd" Title="SessionValueSerializer Methods" Url="html/7e9437e4-5ddf-4f9a-d150-eb0d6979bc4f.htm">
+        <HelpTOCNode Title="Create(T, U) Method " Url="html/7a34b575-186a-f77c-d9ac-bfffbf776235.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="70b2999b-182d-4a74-8614-e23fc048c53c" Title="SessionValueSerializer(T) Class" Url="html/36ebee1f-57b1-9aa2-b304-d254975be6b6.htm">
+      <HelpTOCNode Title="SessionValueSerializer(T) Constructor " Url="html/3586a8b4-ad34-5330-ad3e-46ed6b242338.htm" />
+      <HelpTOCNode Id="505ac205-b2c4-4ca0-a28c-d1577e3c9c9d" Title="SessionValueSerializer(T) Methods" Url="html/48a82c41-4fce-28e2-4f11-44703429afc3.htm">
+        <HelpTOCNode Title="Deserialize Method " Url="html/66897304-dcf6-1558-4798-75a7246d4101.htm" />
+        <HelpTOCNode Title="Get Method " Url="html/6ff982a2-03d1-d511-326f-c152cd1fe15c.htm" />
+        <HelpTOCNode Title="GetRequired Method " Url="html/1b226ada-54e4-a1b6-f3f6-c4253da4a59c.htm" />
+        <HelpTOCNode Title="Serialize Method " Url="html/5ffbbbf4-c7b6-5c77-7493-057ebaaf9093.htm" />
+        <HelpTOCNode Title="Set Method " Url="html/e04741e5-2546-64d5-c210-47ea928d4b49.htm" />
+        <HelpTOCNode Title="TryGetValue Method " Url="html/91110ba6-718b-2ff9-9ecd-4a6a00813123.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="0ea31193-bda3-4b6f-94b2-bf3d0747ec44" Title="AspNetCore.Tools.Session.NewtonsoftJson.Session" Url="html/7d163221-7245-ee88-1569-5502a5cad3be.htm">
+    <HelpTOCNode Id="c1616655-613d-4f21-9aef-fa92c40781de" Title="SessionNewtonsoftJsonSerializer(T) Class" Url="html/bf133452-9e70-59ee-12c0-bfe43ce0f530.htm">
+      <HelpTOCNode Title="SessionNewtonsoftJsonSerializer(T) Constructor " Url="html/f3b90de3-c6c2-1471-df54-1262c4b6f15f.htm" />
+      <HelpTOCNode Id="831f5675-426f-4a4e-9c49-0a64a8faa9ef" Title="SessionNewtonsoftJsonSerializer(T) Methods" Url="html/6c2d6e62-9cbb-bc82-69d0-47a6b8c6c1a2.htm">
+        <HelpTOCNode Title="Deserialize Method " Url="html/267d2435-a78e-ce1a-36eb-8da007fe28aa.htm" />
+        <HelpTOCNode Title="Serialize Method " Url="html/029bb4aa-824a-4fbd-7c1a-fcbe84d66329.htm" />
+      </HelpTOCNode>
+    </HelpTOCNode>
+  </HelpTOCNode>
+  <HelpTOCNode Id="51e74f96-5ae9-4b66-9e78-bf16e2520b19" Title="AspNetCore.Tools.ViewModels" Url="html/92d8b53a-79a1-32a1-bf50-c226fdc87599.htm">
+    <HelpTOCNode Id="a7395fcf-0a5f-4348-b993-0a27fc43a0e7" Title="DefaultViewModelFactory Class" Url="html/aa88c80a-ea88-efbd-44af-81654516df31.htm">
+      <HelpTOCNode Title="DefaultViewModelFactory Constructor " Url="html/abac9ab7-5091-5281-0ed8-123f1028e571.htm" />
+      <HelpTOCNode Id="7a454d49-ac67-43d0-85f6-5a096cb55dee" Title="DefaultViewModelFactory Methods" Url="html/7025b8e3-4725-ec8c-4f87-c5c0309f21b9.htm">
+        <HelpTOCNode Id="62270689-5906-46be-8756-be5a1c838906" Title="TryGetViewModel Method " Url="html/d38b0365-43d3-8510-c017-c5180a5f6f70.htm">
+          <HelpTOCNode Title="TryGetViewModel(TViewModel) Method (ControllerBase, TViewModel)" Url="html/6f24e4c2-ed29-6293-7253-a6dae946285d.htm" />
+          <HelpTOCNode Title="TryGetViewModel(TViewModel, T1) Method (ControllerBase, T1, TViewModel)" Url="html/219e600d-2535-3a27-84bb-0089955c8b41.htm" />
+          <HelpTOCNode Title="TryGetViewModel(TViewModel, T1, T2) Method (ControllerBase, T1, T2, TViewModel)" Url="html/7717743e-0606-4173-7e6b-63ffb75a74f1.htm" />
+          <HelpTOCNode Title="TryGetViewModel(TViewModel, T1, T2, T3) Method (ControllerBase, T1, T2, T3, TViewModel)" Url="html/2bc70f65-367d-c8c9-6e5b-4bd9d824b38e.htm" />
+          <HelpTOCNode Title="TryGetViewModel(TViewModel, T1, T2, T3, T4) Method (ControllerBase, T1, T2, T3, T4, TViewModel)" Url="html/3d24b101-4827-06b1-87d2-3a667770512b.htm" />
+          <HelpTOCNode Title="TryGetViewModel(TViewModel, T1, T2, T3, T4, T5) Method (ControllerBase, T1, T2, T3, T4, T5, TViewModel)" Url="html/7eb57256-a483-80ad-a65a-720ca8f900d2.htm" />
+          <HelpTOCNode Title="TryGetViewModel(TViewModel, T1, T2, T3, T4, T5, T6) Method (ControllerBase, T1, T2, T3, T4, T5, T6, TViewModel)" Url="html/82586919-2551-95ce-556b-14a0068587f6.htm" />
+          <HelpTOCNode Title="TryGetViewModel(TViewModel, T1, T2, T3, T4, T5, T6, T7) Method (ControllerBase, T1, T2, T3, T4, T5, T6, T7, TViewModel)" Url="html/197584a5-88d7-2c16-e62b-fd519b01829e.htm" />
+          <HelpTOCNode Title="TryGetViewModel(TViewModel, T1, T2, T3, T4, T5, T6, T7, T8) Method (ControllerBase, T1, T2, T3, T4, T5, T6, T7, T8, TViewModel)" Url="html/06212f78-bbd5-681e-633f-5d5e0b7590a9.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="0eeb7bd4-7cf5-45c6-866b-3346caf7f41f" Title="TryGetViewModelAsync Method " Url="html/95552abb-b664-b027-78ca-b6bc0cc872c1.htm">
+          <HelpTOCNode Title="TryGetViewModelAsync(TViewModel) Method (ControllerBase)" Url="html/464543bd-8e3b-692a-f8ce-34e1288f8897.htm" />
+          <HelpTOCNode Title="TryGetViewModelAsync(TViewModel, T1) Method (ControllerBase, T1)" Url="html/f16a8272-ec7f-f049-1139-2607c298c8b5.htm" />
+          <HelpTOCNode Title="TryGetViewModelAsync(TViewModel, T1, T2) Method (ControllerBase, T1, T2)" Url="html/41a7ddcf-fdf3-243d-2ba5-5fa14368e8fd.htm" />
+          <HelpTOCNode Title="TryGetViewModelAsync(TViewModel, T1, T2, T3) Method (ControllerBase, T1, T2, T3)" Url="html/73ca055b-09e0-a451-9c73-68f91c66035b.htm" />
+          <HelpTOCNode Title="TryGetViewModelAsync(TViewModel, T1, T2, T3, T4) Method (ControllerBase, T1, T2, T3, T4)" Url="html/7aee0fa9-bd52-43d1-7887-cd92f5f94375.htm" />
+          <HelpTOCNode Title="TryGetViewModelAsync(TViewModel, T1, T2, T3, T4, T5) Method (ControllerBase, T1, T2, T3, T4, T5)" Url="html/c9adeed6-0b29-bfde-92b5-2f8c2878f986.htm" />
+          <HelpTOCNode Title="TryGetViewModelAsync(TViewModel, T1, T2, T3, T4, T5, T6) Method (ControllerBase, T1, T2, T3, T4, T5, T6)" Url="html/534d119e-9760-60bc-814a-179c600a11b6.htm" />
+          <HelpTOCNode Title="TryGetViewModelAsync(TViewModel, T1, T2, T3, T4, T5, T6, T7) Method (ControllerBase, T1, T2, T3, T4, T5, T6, T7)" Url="html/e5a7460d-394e-89eb-156e-2bddf6973ce2.htm" />
+          <HelpTOCNode Title="TryGetViewModelAsync(TViewModel, T1, T2, T3, T4, T5, T6, T7, T8) Method (ControllerBase, T1, T2, T3, T4, T5, T6, T7, T8)" Url="html/2a57ea77-0bea-4233-7ec1-c4b0d1dcbb54.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="09b5972f-a339-43bb-9ea2-8309a97545a3" Title="IViewModelFactory Interface" Url="html/98a8425d-2eaa-6248-fc64-64ba81a61adc.htm">
+      <HelpTOCNode Id="6b6cfd06-26b4-4b49-8407-74a584bb0180" Title="IViewModelFactory Methods" Url="html/b55d1b33-8828-fc4b-5a98-7a2ca7a3f62e.htm">
+        <HelpTOCNode Id="4ff2bf50-1453-403d-af71-bd393eeaf5a1" Title="TryGetViewModel Method " Url="html/87ca6169-3c17-c788-59c3-5c478b496701.htm">
+          <HelpTOCNode Title="TryGetViewModel(TViewModel) Method (ControllerBase, TViewModel)" Url="html/d7252c2b-17bd-de81-c0af-a6ad33067b65.htm" />
+          <HelpTOCNode Title="TryGetViewModel(TViewModel, T1) Method (ControllerBase, T1, TViewModel)" Url="html/4686a5c8-e628-5e2a-16c8-8c7f16d0885e.htm" />
+          <HelpTOCNode Title="TryGetViewModel(TViewModel, T1, T2) Method (ControllerBase, T1, T2, TViewModel)" Url="html/500cc53d-3529-69e5-7b56-b787f27c4f90.htm" />
+          <HelpTOCNode Title="TryGetViewModel(TViewModel, T1, T2, T3) Method (ControllerBase, T1, T2, T3, TViewModel)" Url="html/57988a97-2155-ab92-bf17-145359eabbc7.htm" />
+          <HelpTOCNode Title="TryGetViewModel(TViewModel, T1, T2, T3, T4) Method (ControllerBase, T1, T2, T3, T4, TViewModel)" Url="html/a598daaa-4c85-9947-d1e8-f74d965ba268.htm" />
+          <HelpTOCNode Title="TryGetViewModel(TViewModel, T1, T2, T3, T4, T5) Method (ControllerBase, T1, T2, T3, T4, T5, TViewModel)" Url="html/9a54257d-0ed2-a1e7-ca0b-79662f184b95.htm" />
+          <HelpTOCNode Title="TryGetViewModel(TViewModel, T1, T2, T3, T4, T5, T6) Method (ControllerBase, T1, T2, T3, T4, T5, T6, TViewModel)" Url="html/21d38fde-7d90-602e-4789-c8cb64431637.htm" />
+          <HelpTOCNode Title="TryGetViewModel(TViewModel, T1, T2, T3, T4, T5, T6, T7) Method (ControllerBase, T1, T2, T3, T4, T5, T6, T7, TViewModel)" Url="html/a795967b-194b-9f2b-f759-6dc933c95821.htm" />
+          <HelpTOCNode Title="TryGetViewModel(TViewModel, T1, T2, T3, T4, T5, T6, T7, T8) Method (ControllerBase, T1, T2, T3, T4, T5, T6, T7, T8, TViewModel)" Url="html/aeaeb0a4-0e43-a980-e1d9-ac69e125cf4e.htm" />
+        </HelpTOCNode>
+        <HelpTOCNode Id="027ab156-04c2-4cef-b5f4-fcab2a0c9ec8" Title="TryGetViewModelAsync Method " Url="html/92160aea-bb5d-48bb-a470-3b3b52135414.htm">
+          <HelpTOCNode Title="TryGetViewModelAsync(TViewModel) Method (ControllerBase)" Url="html/66dcde93-993e-d4f5-a500-bc1a26b78fee.htm" />
+          <HelpTOCNode Title="TryGetViewModelAsync(TViewModel, T1) Method (ControllerBase, T1)" Url="html/257c6ce1-e3ef-b4f7-0df1-43bb3395adbe.htm" />
+          <HelpTOCNode Title="TryGetViewModelAsync(TViewModel, T1, T2) Method (ControllerBase, T1, T2)" Url="html/16bc0ee2-b087-0091-c751-9b9ce0a78658.htm" />
+          <HelpTOCNode Title="TryGetViewModelAsync(TViewModel, T1, T2, T3) Method (ControllerBase, T1, T2, T3)" Url="html/f27427c8-9c84-6a60-a8a8-9387394fff85.htm" />
+          <HelpTOCNode Title="TryGetViewModelAsync(TViewModel, T1, T2, T3, T4) Method (ControllerBase, T1, T2, T3, T4)" Url="html/4213fee2-2df2-58a4-16ed-a3293416f7eb.htm" />
+          <HelpTOCNode Title="TryGetViewModelAsync(TViewModel, T1, T2, T3, T4, T5) Method (ControllerBase, T1, T2, T3, T4, T5)" Url="html/c188a69f-0c6e-cfd1-3f8b-4562e6b9b880.htm" />
+          <HelpTOCNode Title="TryGetViewModelAsync(TViewModel, T1, T2, T3, T4, T5, T6) Method (ControllerBase, T1, T2, T3, T4, T5, T6)" Url="html/400ca78c-3ba4-328b-3813-0a7423858dbc.htm" />
+          <HelpTOCNode Title="TryGetViewModelAsync(TViewModel, T1, T2, T3, T4, T5, T6, T7) Method (ControllerBase, T1, T2, T3, T4, T5, T6, T7)" Url="html/fcf7b53e-55f8-6b27-97b5-5da41cce2d52.htm" />
+          <HelpTOCNode Title="TryGetViewModelAsync(TViewModel, T1, T2, T3, T4, T5, T6, T7, T8) Method (ControllerBase, T1, T2, T3, T4, T5, T6, T7, T8)" Url="html/2ca091b8-2657-bd5c-8169-63b71da2420e.htm" />
+        </HelpTOCNode>
+      </HelpTOCNode>
+    </HelpTOCNode>
+    <HelpTOCNode Id="6f97a377-09c6-49b1-ab5b-e21f4607d0a3" Title="ViewModelBuilderAttribute Class" Url="html/225f5262-9cec-7b59-c9f4-8e296cf38599.htm">
+      <HelpTOCNode Title="ViewModelBuilderAttribute Constructor " Url="html/79e3a3f5-ff43-a7ab-d31d-d6c2fda26fae.htm" />
+      <HelpTOCNode Id="af569df5-bcf3-4178-811c-2bb3e1a547a1" Title="ViewModelBuilderAttribute Properties" Url="html/16cc3c2b-32e4-f618-eb2c-221952299585.htm">
+        <HelpTOCNode Title="ViewModelType Property " Url="html/45bb2633-60cf-14ae-a927-6b217c5a5d0b.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="ViewModelBuilderAttribute Methods" Url="html/ef6c6245-4298-5c3b-cb7f-4fdc0b62831c.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="e0e7353c-c03c-4c90-a328-0c8fe51b9b97" Title="ViewModelBuilderBase Class" Url="html/bb021f33-9425-376b-a57d-5c2d686382f7.htm">
+      <HelpTOCNode Title="ViewModelBuilderBase Constructor " Url="html/d036d317-5315-57b2-4e78-4bb0f2a20f5e.htm" />
+      <HelpTOCNode Id="a6905808-7432-4425-8998-4e8fab09cfb2" Title="ViewModelBuilderBase Properties" Url="html/f40b0d0e-4275-d181-9e52-56492f63fdf2.htm">
+        <HelpTOCNode Title="Controller Property " Url="html/f04b008b-0691-dba2-a2f0-9b26160e3655.htm" />
+        <HelpTOCNode Title="ControllerContext Property " Url="html/37a88872-feff-9d2a-4402-bb90d6091d1a.htm" />
+        <HelpTOCNode Title="HttpContext Property " Url="html/d5efa000-cebd-76bc-3305-73ab935fc706.htm" />
+        <HelpTOCNode Title="MetadataProvider Property " Url="html/dbe70eae-bd82-2c99-9a84-ed33e33908d1.htm" />
+        <HelpTOCNode Title="ModelBinderFactory Property " Url="html/ac0a95f2-1cf4-105d-1840-c0e5382e9b33.htm" />
+        <HelpTOCNode Title="ModelState Property " Url="html/0118a80d-936c-998a-4342-85bc9e29b791.htm" />
+        <HelpTOCNode Title="ObjectValidator Property " Url="html/58910067-24b7-683e-178a-54c61a2f4bac.htm" />
+        <HelpTOCNode Title="ProblemDetailsFactory Property " Url="html/e1b98ac3-c3de-bfd0-30d3-0b58dcb9214e.htm" />
+        <HelpTOCNode Title="Request Property " Url="html/bb7b77f6-13b1-5270-1a90-b56291b1d9de.htm" />
+        <HelpTOCNode Title="Response Property " Url="html/febfb78d-9854-7b4e-3ce9-bdf72a17996d.htm" />
+        <HelpTOCNode Title="RouteData Property " Url="html/55338514-2ef8-d422-a98a-8e861913de04.htm" />
+        <HelpTOCNode Title="Session Property " Url="html/c4cabe82-ecfc-23fb-1da6-4120d8d811e1.htm" />
+        <HelpTOCNode Title="Url Property " Url="html/848b8189-eec4-c4d5-e72a-3a68ea13b06b.htm" />
+        <HelpTOCNode Title="User Property " Url="html/1877bb02-e695-abb5-54ad-f9f391d95c44.htm" />
+        <HelpTOCNode Title="WebSockets Property " Url="html/5b3619fb-6bb9-6328-34ec-2b900b30b38e.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="ViewModelBuilderBase Methods" Url="html/33beed44-70bc-14b1-6f70-8e20be63fd76.htm" />
+    </HelpTOCNode>
+    <HelpTOCNode Id="48c87ea6-9dc8-4cf4-af9a-63574a49053b" Title="ViewModelBuilderBase(TController) Class" Url="html/99f2c832-b318-276c-7a16-23b486a11da4.htm">
+      <HelpTOCNode Title="ViewModelBuilderBase(TController) Constructor " Url="html/6b9bcf3f-9138-75f1-ce23-838aedbaf449.htm" />
+      <HelpTOCNode Id="044fa745-3354-460d-bd13-ab21a3006086" Title="ViewModelBuilderBase(TController) Properties" Url="html/ceaa9b6d-cb2b-fb49-f072-774dc03802fd.htm">
+        <HelpTOCNode Title="Controller Property " Url="html/7c63b7ed-5892-5f01-f9b8-0fd1fd0cdb6d.htm" />
+      </HelpTOCNode>
+      <HelpTOCNode Title="ViewModelBuilderBase(TController) Methods" Url="html/760ae43d-707f-8d9c-0534-75dde4dbd092.htm" />
+    </HelpTOCNode>
+  </HelpTOCNode>
+</HelpTOC>
