@@ -17,7 +17,7 @@ This library provides a bunch of useful methods for working with `AspNetCore` ap
 
 ## Quick Start Guide
 
-Here you can consider the main features of the library. Check out the documentation for more details.
+Here you can consider the main features of the library. Check out the [documentation](https://kir-antipov.github.io/AspNetCore.Tools/AspNetCore.Tools.Documentation/Help) for more details.
 
 ### 1. Automatic registration of services
 
@@ -358,7 +358,7 @@ Session.TryGetValue("not-data", out data);
 [5]: https://img.shields.io/nuget/v/AspNetCore.Tools.Session.ProtobufNet.svg?style=flat-square&label=AspNetCore.Tools.Session.ProtobufNet&cacheSeconds=3600
 [6]: https://www.nuget.org/packages/AspNetCore.Tools.Session.ProtobufNet/
 
-[7]: https://img.shields.io/github/license/Kir-Antipov/AspNetCore.Tools.svg?style=flat-square&label=License&cacheSeconds=1296000
+[7]: https://img.shields.io/github/license/Kir-Antipov/AspNetCore.Tools.svg?style=flat-square&label=License&cacheSeconds=36000
 [8]: https://raw.githubusercontent.com/Kir-Antipov/AspNetCore.Tools/master/LICENSE.md
 
 [9]: https://github.com/JamesNK/Newtonsoft.Json
