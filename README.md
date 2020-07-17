@@ -17,7 +17,7 @@ This library provides a bunch of useful methods for working with `AspNetCore` ap
 
 ## Quick Start Guide
 
-Here you can consider the main features of the library. Check out the [documentation](https://kir-antipov.github.io/AspNetCore.Tools/AspNetCore.Tools.Documentation/Help) for more details.
+Here you can consider the main features of the library. Check out the [documentation](https://kir-antipov.github.io/AspNetCore.Tools/Help) for more details.
 
 ### 1. Automatic registration of services
 
