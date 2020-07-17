@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<topic id="73d9b790-e109-4603-853e-8e25fe9c6438" revisionNumber="1">
+	<developerConceptualDocument xmlns="http://ddue.schemas.microsoft.com/authoring/2003/5" xmlns:xlink="http://www.w3.org/1999/xlink">
+		<introduction>
+			<para>
+        This library provides a bunch of useful methods for working with AspNetCore applications: automatic registration of services, middlewares and model binders, automatic generation of model binder providers, tools for switching from Ugly Fat Controllers to Nice Skinny Controllers, and much much more!
+      </para>
+		</introduction>
+	</developerConceptualDocument>
+</topic>

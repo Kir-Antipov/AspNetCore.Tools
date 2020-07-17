@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Topics>
+  <Topic id="73d9b790-e109-4603-853e-8e25fe9c6438" visible="True" isDefault="true" isSelected="true" title="Welcome to the AspNetCore.Tools">
+    <HelpKeywords>
+      <HelpKeyword index="K" term="Welcome" />
+    </HelpKeywords>
+  </Topic>
+</Topics>
