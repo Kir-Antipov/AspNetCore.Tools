@@ -16,7 +16,7 @@
     <RepositoryType>git</RepositoryType>
     <PackageTags>aspnetcore aspnet extensions netcore tools session sessionstate protobuf</PackageTags>
     <Description>Plugin for AspNetCore.Tools that extends ISession's abilities and allows you to store there complex objects by serializing them with protobuf-net.</Description>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
   </PropertyGroup>
 
   <ItemGroup>
