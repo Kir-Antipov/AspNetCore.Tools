@@ -3,6 +3,7 @@ using AspNetCore.Tools.Services;
 using AspNetCore.Tools.ViewModels;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using System.Linq;
 
 namespace AspNetCore.Tools.Extensions
 {
@@ -12,7 +13,8 @@ namespace AspNetCore.Tools.Extensions
     public static class ServiceCollectionExtensions
     {
         /// <summary>
-        /// Adds all services marked with <see cref="IServiceAttribute"/>
+        /// Adds all services marked with <see cref="IServiceAttribute"/> and
+        /// all factories marked with <see cref="IServiceFactoryAttribute"/>
         /// to the specified <see cref="IServiceCollection"/>.
         /// </summary>
         /// <param name="services">The <see cref="IServiceCollection"/> to add services to.</param>
@@ -26,6 +28,17 @@ namespace AspNetCore.Tools.Extensions
                 try
                 {
                     AddService(services, service, attr);
+                }
+                catch
+                {
+                    if (!skipOnFailure)
+                        throw;
+                }
+
+            foreach (var (factory, attr) in ReflectionHelper.GetMarkedTypes<IServiceFactoryAttribute>())
+                try
+                {
+                    AddServiceFactory(services, factory, attr);
                 }
                 catch
                 {
@@ -63,10 +76,14 @@ namespace AspNetCore.Tools.Extensions
 
         private static IServiceFactory? CreateFactoryInstance(Type factoryType)
         {
-            if (!typeof(IServiceFactory).IsAssignableFrom(factoryType))
+            Type? factoryImplementationType = factoryType.FindImplementation();
+            if (factoryImplementationType is null)
                 return default;
 
-            if (!(factoryType.GetConstructor(Type.EmptyTypes) is { } constructor))
+            if (!typeof(IServiceFactory).IsAssignableFrom(factoryImplementationType))
+                return default;
+
+            if (!(factoryImplementationType.GetConstructor(Type.EmptyTypes) is { } constructor))
                 return default;
 
             return (IServiceFactory)constructor.Invoke(Array.Empty<object>());
@@ -78,6 +95,26 @@ namespace AspNetCore.Tools.Extensions
                 throw new TypeLoadException($"{service.FullName} has no implementation.");
 
             services.Add(new ServiceDescriptor(attribute.ServiceType ?? service, implementationType, attribute.Lifetime));
+        }
+
+        private static void AddServiceFactory(IServiceCollection services, Type factory, IServiceFactoryAttribute attribute)
+        {
+            Type factoryImplementation = attribute.Factory ?? factory;
+            if (!(CreateFactoryInstance(factoryImplementation) is { } factoryInstance))
+                throw new TypeLoadException($"{factoryImplementation.FullName} must implement {typeof(IServiceFactory).FullName} and have parameterless constructor.");
+            
+            factoryImplementation = factoryInstance.GetType();
+
+            Type? serviceType = attribute.ServiceType;
+            serviceType ??= factoryImplementation
+                .GetInterfaces()
+                .FirstOrDefault(x => x.IsGenericType && x.GetGenericTypeDefinition() == typeof(IServiceFactory<>))?
+                .GetGenericArguments()[0];
+
+            if (serviceType is null)
+                throw new TypeLoadException($"The {nameof(IServiceFactoryAttribute.ServiceType)} property wasn't set for the {factoryImplementation.FullName}.");
+
+            services.Add(new ServiceDescriptor(serviceType, factoryInstance.GetService, attribute.Lifetime));
         }
     }
 }
