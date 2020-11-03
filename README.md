@@ -59,11 +59,11 @@ public class MyService : IMyService { }
  ...
 
 // In this case, we marked the implementation,
-// and indicated how it should be interpreted. 
+// and indicated how it should be interpreted.
 
 public interface IMyAnotherService { }
 
-[ScopedService(ServiceType = typeof(IMyAnotherService))] 
+[ScopedService(ServiceType = typeof(IMyAnotherService))]
 public class MyAnotherService : IMyAnotherService { }
 ```
 
@@ -101,6 +101,42 @@ public class MyScoped { }
  ...
 
 // Totally fine
+services.AddMarked();
+```
+
+### 1.5. Automatic registration of service factories
+
+It's pretty the same story as about services themselves. There're few more attributes you should know about:
+
+ - `[ScopedServiceFactory]` - `services.AddScoped` replacement
+ - `[TransientServiceFactory]` - `services.AddTransient` replacement
+ - `[SingletonServiceFactory]` - `services.AddSingleton` replacement
+ - `[HostedServiceFactory]` - `services.AddHostedService` replacement
+
+Every class marked with one of these attributes will be registered as a valid service factory.
+
+Examples:
+
+```csharp
+public interface IMyScoped { }
+
+public class MyScoped : IMyScoped { }
+
+
+// Since we marked the interface, the method will automatically
+// find the first suitable implementation of it,
+// which in our case is `MyScopedFactory` class.
+
+[ScopedServiceFactory]
+public interface IMyScopedFactory : IServiceFactory<IMyScoped> { }
+
+public class MyScopedFactory : IMyScopedFactory
+{
+    public IMyScoped GetService(IServiceCollection services) => new MyScoped();
+}
+
+...
+
 services.AddMarked();
 ```
 
@@ -179,8 +215,8 @@ This approach is much more flexible than using a simple `Use`, 'cause it has mor
 
 ```csharp
 app.UseMiddleware<IMyService>((next, context, service) =>
-{ 
-    context.Response.Headers.Add(service.Header, service.Value); 
+{
+    context.Response.Headers.Add(service.Header, service.Value);
     return next(context);
 });
 ```
@@ -193,9 +229,9 @@ At the moment, to register some model binders, we need to do the following steps
 
  1. Implement model binder
  2. Implement its provider
- 3. 
+ 3.
 ```csharp
-services.AddControllersWithViews(options => 
+services.AddControllersWithViews(options =>
 {
     options.ModelBinderProviders.Insert(0, new MyModelBinderProvider());
 });
@@ -209,7 +245,7 @@ Let's make life a little easier again:
 [ModelBinderProvider]
 public class MyModelBinderProvider : SingletonModelBinderProviderBase<MyModelBinder>
 {
-    public override bool IsSuitable(ModelBinderProviderContext context) => 
+    public override bool IsSuitable(ModelBinderProviderContext context) =>
         context.Metadata.Name == "my" && typeof(MyModelBinder).IsAssignableFrom(context.Metadata.ModelType);
 }
 
@@ -294,7 +330,7 @@ public class HomeController : Controller
 }
 ```
 
-As you can see, we've successfully moved the request processing logic to the `IndexViewModelBuilder`. 
+As you can see, we've successfully moved the request processing logic to the `IndexViewModelBuilder`.
 
 A few tips about `ViewModelBuilder`s:
 
