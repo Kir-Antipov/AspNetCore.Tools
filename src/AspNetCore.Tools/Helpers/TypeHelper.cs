@@ -12,7 +12,7 @@ namespace AspNetCore.Tools.Helpers
         [return: MaybeNull]
         public static TAttribute GetCustomAttribute<TAttribute>(this Type t) => t.GetCustomAttributes<TAttribute>().FirstOrDefault();
 
-        public static bool CouldBeInstance(this Type t) => (t.IsClass || t.IsValueType) && !t.IsAbstract && !t.IsGenericType;
+        public static bool CouldBeInstance(this Type t) => (t.IsClass || t.IsValueType) && !t.IsAbstract && !t.IsGenericTypeDefinition;
 
         public static Type? FindImplementation(this Type t)
         {
