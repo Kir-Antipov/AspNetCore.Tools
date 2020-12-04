@@ -16,13 +16,13 @@ namespace AspNetCore.Tools.Middlewares
         /// <summary>
         /// The arguments to pass to the middleware type instance's constructor.
         /// </summary>
-        public object?[] Arguments { get; }
+        public object[] Arguments { get; }
 
         /// <summary>
         /// Initializes a new instance of the <see cref="MiddlewareAttribute"/> class.
         /// </summary>
         /// <param name="priority">The priority of this middleware against others (the higher the priority, the earlier this middleware will be launched).</param>
         /// <param name="args">The arguments to pass to the middleware type instance's constructor.</param>
-        public MiddlewareAttribute(int priority = 0, params object?[]? args) => (Priority, Arguments) = (priority, args ?? Array.Empty<object>());
+        public MiddlewareAttribute(int priority = 0, params object[]? args) => (Priority, Arguments) = (priority, args ?? Array.Empty<object>());
     }
 }

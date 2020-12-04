@@ -23,7 +23,7 @@ namespace AspNetCore.Tools.Helpers
 
         public static IEnumerable<(Type Type, TAttribute Attribute)> GetMarkedTypes<TAttribute>() => GetTypes()
             .Select(x => (Type: x, Attribute: x.GetCustomAttribute<TAttribute>()))
-            .Where(x => x.Attribute is { });
+            .Where(x => x.Attribute is { })!;
 
         private static bool IsDefaultAssembly(Assembly assembly) => string.IsNullOrEmpty(assembly.FullName) || DefaultAssemblies.Any(assembly.FullName.StartsWith);
     }

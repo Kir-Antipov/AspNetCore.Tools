@@ -23,7 +23,7 @@ namespace AspNetCore.Tools.ViewModels.Internal
         public virtual Task<(bool success, TViewModel model)> TryGetViewModelAsync(ControllerBase controller<#= GetSignature(i) #>)
         {
             bool success = TryGetViewModel(controller<#= GetArgs(i) #>, out TViewModel model);
-            return Task.FromResult((success, model));
+            return Task.FromResult((success, model!));
         }
     }
 <#

@@ -35,7 +35,7 @@ namespace AspNetCore.Tools.ModelBinding
 
             bindingContext.ModelState.SetModelValue(modelName, valueProviderResult);
 
-            string valueStr = valueProviderResult.FirstValue;
+            string valueStr = valueProviderResult.FirstValue ?? string.Empty;
             if (!TryParse(valueStr, out object? result))
             {
                 bindingContext.Result = ModelBindingResult.Failed();

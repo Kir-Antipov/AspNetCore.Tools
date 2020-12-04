@@ -18,7 +18,7 @@ namespace AspNetCore.Tools.ViewModels.Internal
         public virtual Task<(bool success, TViewModel model)> TryGetViewModelAsync(ControllerBase controller)
         {
             bool success = TryGetViewModel(controller, out TViewModel model);
-            return Task.FromResult((success, model));
+            return Task.FromResult((success, model!));
         }
     }
 
@@ -36,7 +36,7 @@ namespace AspNetCore.Tools.ViewModels.Internal
         public virtual Task<(bool success, TViewModel model)> TryGetViewModelAsync(ControllerBase controller, T1 arg1)
         {
             bool success = TryGetViewModel(controller, arg1, out TViewModel model);
-            return Task.FromResult((success, model));
+            return Task.FromResult((success, model!));
         }
     }
 
@@ -54,7 +54,7 @@ namespace AspNetCore.Tools.ViewModels.Internal
         public virtual Task<(bool success, TViewModel model)> TryGetViewModelAsync(ControllerBase controller, T1 arg1, T2 arg2)
         {
             bool success = TryGetViewModel(controller, arg1, arg2, out TViewModel model);
-            return Task.FromResult((success, model));
+            return Task.FromResult((success, model!));
         }
     }
 
@@ -72,7 +72,7 @@ namespace AspNetCore.Tools.ViewModels.Internal
         public virtual Task<(bool success, TViewModel model)> TryGetViewModelAsync(ControllerBase controller, T1 arg1, T2 arg2, T3 arg3)
         {
             bool success = TryGetViewModel(controller, arg1, arg2, arg3, out TViewModel model);
-            return Task.FromResult((success, model));
+            return Task.FromResult((success, model!));
         }
     }
 
@@ -90,7 +90,7 @@ namespace AspNetCore.Tools.ViewModels.Internal
         public virtual Task<(bool success, TViewModel model)> TryGetViewModelAsync(ControllerBase controller, T1 arg1, T2 arg2, T3 arg3, T4 arg4)
         {
             bool success = TryGetViewModel(controller, arg1, arg2, arg3, arg4, out TViewModel model);
-            return Task.FromResult((success, model));
+            return Task.FromResult((success, model!));
         }
     }
 
@@ -108,7 +108,7 @@ namespace AspNetCore.Tools.ViewModels.Internal
         public virtual Task<(bool success, TViewModel model)> TryGetViewModelAsync(ControllerBase controller, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5)
         {
             bool success = TryGetViewModel(controller, arg1, arg2, arg3, arg4, arg5, out TViewModel model);
-            return Task.FromResult((success, model));
+            return Task.FromResult((success, model!));
         }
     }
 
@@ -126,7 +126,7 @@ namespace AspNetCore.Tools.ViewModels.Internal
         public virtual Task<(bool success, TViewModel model)> TryGetViewModelAsync(ControllerBase controller, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6)
         {
             bool success = TryGetViewModel(controller, arg1, arg2, arg3, arg4, arg5, arg6, out TViewModel model);
-            return Task.FromResult((success, model));
+            return Task.FromResult((success, model!));
         }
     }
 
@@ -144,7 +144,7 @@ namespace AspNetCore.Tools.ViewModels.Internal
         public virtual Task<(bool success, TViewModel model)> TryGetViewModelAsync(ControllerBase controller, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7)
         {
             bool success = TryGetViewModel(controller, arg1, arg2, arg3, arg4, arg5, arg6, arg7, out TViewModel model);
-            return Task.FromResult((success, model));
+            return Task.FromResult((success, model!));
         }
     }
 
@@ -162,7 +162,7 @@ namespace AspNetCore.Tools.ViewModels.Internal
         public virtual Task<(bool success, TViewModel model)> TryGetViewModelAsync(ControllerBase controller, T1 arg1, T2 arg2, T3 arg3, T4 arg4, T5 arg5, T6 arg6, T7 arg7, T8 arg8)
         {
             bool success = TryGetViewModel(controller, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, out TViewModel model);
-            return Task.FromResult((success, model));
+            return Task.FromResult((success, model!));
         }
     }
 }
